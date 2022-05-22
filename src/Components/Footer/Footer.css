@@ -24,7 +24,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-between; 
     min-width: 800px;
 }
 
@@ -67,8 +67,9 @@ ul li a{
     text-decoration: none;
     color:#4B5563;
 }
-ul li a:hover {
+ul li:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 ul .company {
@@ -78,9 +79,7 @@ ul .company {
 
 }
 
-ul .companya {
-    color: black;
-}
+
 
 
 form{

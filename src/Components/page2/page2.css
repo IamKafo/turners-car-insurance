@@ -151,11 +151,6 @@ table{
     cursor: pointer;
 }
 
-
-.getquotebutton{
-    text-decoration: none;
-}
-
 .comprehensive-insurance::before,
 .comprehensive-insurance::after{
     --scale: 0;
@@ -164,13 +159,15 @@ table{
     transform: translateX(-50%) translateY(-150%) scale(var(--scale));
     transition: 200ms transform;
     transform-origin: bottom center;
+    font-size: 18px;
 }
 .comprehensive-insurance::before{
     content:attr(data-tooltip);
     text-align: center;
     width: max-content;
     max-width: 50%;
-    font-size: 20px;
+    font-size: 18px;
+
 }
 
 .comprehensive-insurance:hover::before,
@@ -186,6 +183,7 @@ table{
     transform: translateX(-50%) translateY(-150%) scale(var(--scale));
     transition: 200ms transform;
     transform-origin: bottom center;
+    font-size: 16px;
 }
 
 .third-fire-theft::before{
@@ -193,7 +191,8 @@ table{
     text-align: center;
     width: max-content;
     max-width: 50%;
-    font-size: 20px;
+    font-size: 16px;
+    background-color: transparent;
 }
 
 .third-fire-theft:hover::before,
@@ -210,6 +209,7 @@ table{
     transform: translateX(-50%) translateY(-180%) scale(var(--scale));
     transition: 200ms transform;
     transform-origin: bottom center;
+    font-size: 18px;
 }
 
 .third-party::before{
@@ -217,7 +217,7 @@ table{
     text-align: center;
     width: max-content;
     max-width: 50%;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .third-party:hover::before,

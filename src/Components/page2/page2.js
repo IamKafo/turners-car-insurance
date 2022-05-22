@@ -70,7 +70,7 @@ const Page2 = () => {
                         </tr>
                         <tr>
                             <td></td>
-                            <td className="best-policy7"><a className="getquotebutton" href=""><button className="get-quote">Get a quote</button></a></td>
+                            <td className="best-policy7"><button className="get-quote">Get a quote</button></td>
                             <td><button className="get-quote">Get a quote</button></td>
                             <td ><button className="get-quote">Get a quote</button></td>
                         </tr>
