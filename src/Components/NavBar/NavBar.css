@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap');
+
+
+.navbar-container {
+    border-bottom:2px #00000009 solid;
+    box-shadow: 1px 1px 9px 9px #00000039;
+    padding: 10px;
+    border-bottom-left-radius: 30px ;
+    border-bottom-right-radius: 30px ;
+    font-family: 'Lato', sans-serif;
+
+
+}
+
+.navbar-selection{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar-selection h3 {
+    cursor: pointer;
+}
+
+.down-arrow-icon {
+    margin-left: 10px;
+    margin-top: 3px;
+
+}
+
+.faQs {
+    display: flex;   
+}
+
+.form-search-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search-input {
+    position: relative;
+    border-radius: 10px;
+    height: 40px;
+    background-color: #00000009;
+    padding-left: 30px;
+    border: 0.1px #00000009 solid;
+}
+
+.navbar-search-icon {
+    position: absolute;
+    margin-left: 5px;
+ 
+}
+
+.language-icon {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-buttons {
+ display: flex;
+ align-items: center;
+}
+
+
+.navbar-login-button, .navbar-signup-button {
+    border-radius: 12px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbar-login-button{
+    background-color: #fff;
+    border: 0.8px solid #00000009;
+}
+
+.navbar-signup-button {
+    background-color: black;
+    color: #fff;
+    margin-left: 15px;
+    
+}
+
+ .navbar-dropdown-list {
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    margin-left: -50px;
+    top: 55px;
+    z-index: 2;
+}
+
+.insurance-list {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    
+}
+
+.insurance-list h3 {
+    margin-top: -5px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+
+
+
