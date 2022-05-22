@@ -209,7 +209,7 @@ table{
     transform: translateX(-50%) translateY(-180%) scale(var(--scale));
     transition: 200ms transform;
     transform-origin: bottom center;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .third-party::before{
@@ -217,7 +217,7 @@ table{
     text-align: center;
     width: max-content;
     max-width: 50%;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .third-party:hover::before,
