@@ -151,11 +151,6 @@ table{
     cursor: pointer;
 }
 
-
-.getquotebutton{
-    text-decoration: none;
-}
-
 .comprehensive-insurance::before,
 .comprehensive-insurance::after{
     --scale: 0;
