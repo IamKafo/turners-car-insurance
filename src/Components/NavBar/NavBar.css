@@ -68,6 +68,10 @@
     padding: 10px;
     text-align: center;
     cursor: pointer;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
 }
 
 .navbar-login-button{
@@ -79,8 +83,9 @@
     background-color: black;
     color: #fff;
     margin-left: 15px;
-    
+    font-weight: bold;
 }
+    
 
  .navbar-dropdown-list {
     position: absolute;

@@ -1,0 +1,226 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+
+.page2content{
+    width:1600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato', sans-serif;
+    
+}
+header{
+    margin-left: auto;
+    margin-right: auto;
+    width: 7em;
+    font-size: 45px;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 0px 1.25px, 1.25px 0px, 1.25px 1.25px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    margin-top: 70px;
+}
+.policy-container{
+    min-width: 1300px;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-bottom: 50px;
+}
+.policy-text {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 60px;
+    margin-bottom: 35px;
+}
+
+.policy-container button {
+    margin-left: 7%;
+    position:relative; top:-40px;    
+}
+
+.turnersblue {
+    color: #0076BE;
+}
+
+button{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+table{
+    width:1300px;
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 25px;
+    font-weight: bold;
+    border-spacing: 0;
+    padding-bottom: 20px;
+
+}
+
+.green-tick{
+    color: green;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.red-cross{
+    color: darkred;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.best-policy {
+    background-color: #B3D6EC;
+}
+
+.best-policy2 {
+    background-image: linear-gradient(#b3d6ec, #c0ddef);
+    
+}
+
+.best-policy3 {
+    background-image: linear-gradient(#c0ddef, #cde4f2);
+    
+}
+
+.best-policy4 {
+    background-image: linear-gradient(#cde4f2, #dbebf6);
+    
+}
+
+.best-policy5 {
+    background-image: linear-gradient(#dbebf6, #eaf3fa);
+    
+}
+
+.best-policy6 { 
+    background-image: linear-gradient(#eaf3fa, #f3f8fc)
+    
+}
+
+.best-policy7 {
+    background-image: linear-gradient(#f3f8fc, #ffffff)
+}
+
+.comprehensive-subtext{
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: normal;
+}
+
+.description-cell{
+    width: 325px;
+    line-height: 3;
+    color: #0076BE;
+
+}
+
+.info-cell{
+    width: 200px;
+    color: #0076BE;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+    cursor: pointer;
+}
+
+.get-quote{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: auto;
+    display: block;
+    width: 200px;
+    height: 60px;
+    border-radius: 18px;
+    font-size: 25px;
+    font-weight: bold;
+    outline: none;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
+.get-quote:hover{
+    cursor: pointer;
+}
+
+
+.getquotebutton{
+    text-decoration: none;
+}
+
+.comprehensive-insurance::before,
+.comprehensive-insurance::after{
+    --scale: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-150%) scale(var(--scale));
+    transition: 200ms transform;
+    transform-origin: bottom center;
+}
+.comprehensive-insurance::before{
+    content:attr(data-tooltip);
+    text-align: center;
+    width: max-content;
+    max-width: 50%;
+    font-size: 20px;
+}
+
+.comprehensive-insurance:hover::before,
+.comprehensive-insurance:hover::after{
+    --scale:1;
+}
+
+.third-fire-theft::before,
+.third-fire-theft::after{
+    --scale: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-150%) scale(var(--scale));
+    transition: 200ms transform;
+    transform-origin: bottom center;
+}
+
+.third-fire-theft::before{
+    content:attr(data-tooltip2);
+    text-align: center;
+    width: max-content;
+    max-width: 50%;
+    font-size: 20px;
+}
+
+.third-fire-theft:hover::before,
+.third-fire-theft:hover::after{
+    --scale:1;
+}
+
+
+.third-party::before,
+.third-party::after{
+    --scale: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-180%) scale(var(--scale));
+    transition: 200ms transform;
+    transform-origin: bottom center;
+}
+
+.third-party::before{
+    content:attr(data-tooltip3);
+    text-align: center;
+    width: max-content;
+    max-width: 50%;
+    font-size: 20px;
+}
+
+.third-party:hover::before,
+.third-party:hover::after{
+    --scale:1;
+}
