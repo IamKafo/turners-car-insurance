@@ -1,5 +1,6 @@
 import React, { Children, useState } from 'react';
 import classes from './SimpleCarousel.module.css'
+import { NavLink } from 'react-router-dom';
 
 const widthSpan = 100.1
 
@@ -75,17 +76,12 @@ function SimpleCarousel(props) {
                 <div className={classes.carouseldisplayframe}>
                     {displayItems}</div>
                     <div className={classes.ButtonWrapper}>
-                        <div className={classes.QouteButton}><b>Get a quote</b></div>
+                        <div className={classes.QouteButton}><NavLink className={classes.NavLink} to='/getquote'><b>Get a quote</b></NavLink></div>
                         <div className={classes.ExistingQouteButton} onClick={(e) => setShowQoute(!showQoute)}><b>Existing quote?</b></div>
-                                
-            
-                                
-
-
                         <h3 className={classes.OurPolicies}>Compare our policies</h3>
                     </div>
                     <div className={classes.InsuranceHeader}>
-                        <h1>Need insurance? <br/> We've have you covered.</h1>
+                        <h1>Need insurance? <br/> We've got you covered.</h1>
                     </div>
                 <div className={classes.RightArrow} onClick={nextClickHandler}>❱</div>
             </div>
