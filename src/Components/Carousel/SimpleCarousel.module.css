@@ -158,7 +158,7 @@
 
 .ButtonWrapper{
     position: absolute;
-    margin-left: 1410px;
+    margin-left: 1310px;
     padding: 20px;
     margin-top: 80px;
     font-family: 'Lato' ,sans-serif;
@@ -179,7 +179,7 @@
     width:240px;
     background-color: rgb(255, 255, 255);
     z-index: 99999;
-    margin-left:1400px;
+    margin-left:1350px;
     top: 426px;
     padding: 20px;
     border-bottom-left-radius: 20px;
