@@ -1,12 +1,12 @@
 import React, {useState} from "react";
-import "./GetQuote.css";
+import "./ChoosePolicy.css";
 import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faXmark, faCircleQuestion} from "@fortawesome/free-solid-svg-icons";
 
-const GetQuote = () => {
+const ChoosePolicy = () => {
 
     const [showQoute, setShowQoute] = useState(false)
 
@@ -86,8 +86,8 @@ const GetQuote = () => {
                         </tr>
                         <tr>
                             <td></td>
-                            <td className="best-policy7"><button className="get-quote">Get a quote</button></td>
-                            <td ><button className="get-quote"><NavLink to='/reviewpage' >Get a quote</NavLink></button></td>
+                            <td className="best-policy7"><button className="get-quote"><NavLink to='/newquote' >Get a quote</NavLink></button></td>
+                            <td ><button className="get-quote">Get a quote</button></td>
                             <td ><button className="get-quote">Get a quote</button></td>
                         </tr>
 
@@ -100,4 +100,4 @@ const GetQuote = () => {
     )
 }
 
-export default GetQuote;
+export default ChoosePolicy;
