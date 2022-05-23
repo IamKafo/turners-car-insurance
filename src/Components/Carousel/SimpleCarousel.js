@@ -77,7 +77,7 @@ function SimpleCarousel(props) {
                     {displayItems}
                     </div>
                     <div className={classes.ButtonWrapper}>
-                            <div className={classes.QouteButton}><NavLink className={classes.NavLink} to='/getquote'><b>Get a quote</b></NavLink></div>
+                            <div className={classes.QouteButton}><NavLink className={classes.NavLink} to='/choosepolicy'><b>Get a quote</b></NavLink></div>
                             <div className={classes.ExistingQouteButton} onClick={(e) => setShowQoute(!showQoute)}><b>Existing quote?</b></div>
                             <div className={classes.DropDownQoute} ></div>
                         <h3 className={classes.OurPolicies}>Compare our policies</h3>
