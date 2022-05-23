@@ -200,7 +200,7 @@ table{
     --scale: 0;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(-150%) scale(var(--scale));
+    transform: translateX(-50%) translateY(-70px) scale(var(--scale));
     transition: 200ms transform;
     transform-origin: bottom center;
     font-size: 18px;
@@ -224,10 +224,10 @@ table{
     --scale: 0;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(-150%) scale(var(--scale));
+    transform: translateX(-50%) translateY(-80px) scale(var(--scale));
     transition: 200ms transform;
     transform-origin: bottom center;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .third-fire-theft::before{
@@ -235,7 +235,7 @@ table{
     text-align: center;
     width: max-content;
     max-width: 50%;
-    font-size: 16px;
+    font-size: 18px;
     background-color: transparent;
 }
 
@@ -250,7 +250,7 @@ table{
     --scale: 0;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(-180%) scale(var(--scale));
+    transform: translateX(-50%) translateY(-90px) scale(var(--scale));
     transition: 200ms transform;
     transform-origin: bottom center;
     font-size: 18px;
