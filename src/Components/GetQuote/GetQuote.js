@@ -1,11 +1,14 @@
-import React from "react";
-import "./page2.css";
+import React, {useState} from "react";
+import "./GetQuote.css";
 import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faXmark, faCircleQuestion} from "@fortawesome/free-solid-svg-icons";
 
-const Page2 = () => {
+const GetQuote = () => {
+
+    const [showQoute, setShowQoute] = useState(false)
+
     return(
         <>
         <NavBar></NavBar>
@@ -16,7 +19,19 @@ const Page2 = () => {
                 <div className="policy-text">
                 <span className="turnersblue">Turners</span> has you covered. <br/>
                 See what each of our three vehicle policies offer:
-                <button>Existing Quote?</button>
+                <button onClick={(e) => setShowQoute(!showQoute)} className="existing-quote">Existing Quote?</button>
+                            {
+                                showQoute && (
+                                            <div className='drop-down-menu'>
+                                                    <h3>Your family name</h3>
+                                                    <input type="text" name="name" placeholder='Enter your name here' />
+                                                    <h3>Your family name</h3>
+                                                    <input type="text" name="name" placeholder='Enter your name here' />
+                                                    <p>I can't remember my qoute number</p>
+                                                    <button className='my-Qoute-Button'>My quote</button>
+                                            </div>
+                                             )
+                            }
                 </div>
             </div>  
 
@@ -84,4 +99,4 @@ const Page2 = () => {
     )
 }
 
-export default Page2;
+export default GetQuote;

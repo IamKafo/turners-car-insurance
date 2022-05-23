@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap');
+
 .carouseldisplayframe {
     border-radius: 20px;
     width: 80%;
     height: 500px;
     max-height: 90vh;
     margin-top: 50px;
-    margin-left: 190px;
+    margin-left: 220px;
     text-align: center;
     background-color: #eaebec;
     overflow-y: hidden;
@@ -122,6 +124,16 @@
     text-align: center;
     font-size: 30px;
     cursor: pointer;
+
+  
+}
+
+.NavLink {
+    text-decoration: none;
+}
+
+.NavLink:visited {
+    color: #fff;
 }
 
 .ExistingQouteButton{
@@ -146,18 +158,20 @@
 
 .ButtonWrapper{
     position: absolute;
-    right: 170px;
+    right: 270px;
     padding: 20px;
     margin-top: 80px;
+    font-family: 'Lato' ,sans-serif;
 }
 
 .InsuranceHeader {
     position: absolute;
-    left: 250px;
+    left: 280px;
     margin-top: 60px;
-    width: 800px;
-    font-size: 30px;
-    line-height: 60px;
+    width: 1000px;
+    font-size: 45px;
+    line-height: 90px;
+    font-family: 'Lato' ,sans-serif;
 }
 
 .DropDownMenu {
@@ -165,7 +179,7 @@
     width:240px;
     background-color: rgb(255, 255, 255);
     z-index: 99999;
-    margin-left: 400px;
+    margin-left: 530px;
     top: -160px;
     padding: 20px;
     border-bottom-left-radius: 20px;

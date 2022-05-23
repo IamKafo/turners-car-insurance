@@ -6,6 +6,7 @@ import img2 from '../../Images/MicrosoftTeams-image (1).png'
 import img3 from '../../Images/MicrosoftTeams-image (2).png'
 import './HomePage.css'
 import Footer from '../Footer/Footer';
+import NavBar from '../NavBar/NavBar';
 
 const HomePage = () => {
 
@@ -20,33 +21,34 @@ const [showQoute5, setShowQoute5] = useState(false)
 
   return (
     <>
+        <NavBar/>
         <div className="homepage-container">
             <SimpleCarousel>
-                <img src={img1} alt="cars"  />
-                <img src={img2} alt="cars" />
-                <img src={img3} alt="cars" />
+                <img src={img1} alt="cars" width={2600}  />
+                <img src={img2} alt="cars"  width={2600}/>
+                <img src={img3} alt="cars"  width={2600}/>
             </SimpleCarousel>
             
             <div className="title-phrase">
-                <h1>Why Tuners? We offer more than a great bargin.</h1>
+                <h1>Why Tuners? We offer more than a great bargain.</h1>
             </div>
             <div className="homepage-content">
                 <div className="homepage-cards-containers">
                     <div className="homepage-cards1"></div>
                     <div className="homepage-cards-title">
-                        <h3>Turners has over <br/> 3,000 cars for sale</h3>
+                        <h3><u>Turners has over <br/> 3,000 cars for sale</u></h3>
                     </div>
                  </div>
                 <div className="homepage-cards-containers">
                         <div className="homepage-cards2"></div>
                         <div className="homepage-cards-title">
-                            <h3>We are NZ's most trusted <br/> used car dealer</h3>
+                            <h3><u>We are NZ's most trusted <br/> used car dealer</u></h3>
                         </div>
                 </div>
                 <div className="homepage-cards-containers">
                         <div className="homepage-cards3"></div>
                         <div className="homepage-cards-title">
-                            <h3>Subscribe a weekly<br/> car for less than $135</h3>
+                            <h3><u>Subscribe a weekly<br/> car for less than $135</u></h3>
                         </div>
                 </div>
             </div>
@@ -85,7 +87,7 @@ const [showQoute5, setShowQoute5] = useState(false)
                 
                 </div>
                 <div className="faq-questions" onClick={(e) => setShowQoute3(!showQoute3)}>
-                    <p>Hoe do I get a quote? 
+                    <p>How do I get a quote? 
                         <Icon className='faq-plus-icon'icon="typcn:plus" />
                     </p>
                     
@@ -93,7 +95,7 @@ const [showQoute5, setShowQoute5] = useState(false)
                     {
                         showQoute3 && (
                             <div className="faq-dropdown-answers">
-                                <h4>You can get a quote on our website's home page: click on "Get a quote" or click <u>here</u> to get started </h4>
+                                <h4>You can get a quote on our website's home page: click on "Get a quote" or click <u>here</u> to get started. </h4>
                             </div>
                         )
                     }

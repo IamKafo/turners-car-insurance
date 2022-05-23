@@ -32,6 +32,19 @@ header{
     margin-bottom: 35px;
 }
 
+.existing-quote {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #fff;
+    border-radius: 20px;
+    width: 300px;
+    padding: 12px;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 2px 3px 6px 0px black;
+}
+
 .policy-container button {
     margin-left: 7%;
     position:relative; top:-40px;    
@@ -41,12 +54,43 @@ header{
     color: #0076BE;
 }
 
-button{
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+.drop-down-menu {
+    position: absolute;
+    width:240px;
+    background-color: rgb(134, 133, 133);
+    z-index: 99999;
+    margin-left: 968px;
+    top: 350px;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;  
 }
 
+.drop-down-menu input {
+    height: 40px;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: -10px;
+    border: 1px solid ;
+    padding-left: 30px ;
+}
+
+.drop-down-menu p {
+    font-size: 10px;
+    /* border-bottom: 1px solid; */
+}
+
+.drop-down-menu button {
+    background-color: #000000;
+    color: #fff;
+    font-weight: 40px;
+    font-size: 20px;
+    height: 60px;
+    width: 180px;
+    margin-left: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
 
 table{
