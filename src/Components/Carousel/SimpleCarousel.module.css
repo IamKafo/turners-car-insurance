@@ -1,0 +1,199 @@
+.carouseldisplayframe {
+    border-radius: 20px;
+    width: 80%;
+    height: 500px;
+    max-height: 90vh;
+    margin-top: 50px;
+    margin-left: 190px;
+    text-align: center;
+    background-color: #eaebec;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    white-space: nowrap;
+    z-index: -22;
+    caret-color: transparent;
+    font-family: 'Lato', sans-serif;
+}
+ 
+.carouseldisplayframe::-webkit-scrollbar {
+    display: none;
+} 
+
+.LeftArrow {
+    position: absolute;
+    left: 1%;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: xx-large;
+    color: #aabbcc;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.LeftArrow:hover {
+    color: #bbccdd;
+}
+
+.LeftArrow:active {
+    color: #206ebd;
+}
+
+.RightArrow {
+    position: absolute;
+    right: 1%;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: xx-large;
+    color: #aabbcc;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.RightArrow:hover {
+    color: #bbccdd
+}
+
+.RightArrow:active {
+    color: #206ebd
+}
+
+.Container {
+    position: relative;
+    display: flex;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+}
+
+.CarouselItem {
+    height: 100%;
+    width:100%;
+    display: inline-block;
+    transition: all 500ms linear;
+}
+
+.CarouselItem img {
+    height: 100%;
+    max-width: 100%;
+    background-color: none;
+}
+
+.Navigation {
+    position: absolute;
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    top: 580px;
+    margin-left: 100px;
+}
+
+.PositionIndicator {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.PositionIndicator:hover{
+    background: #ffffff;
+}
+
+.PositionIndicator:active{
+    background-color: #000000;
+    
+}
+
+.CurrentPosition {
+    border: 1px solid #030303;
+    background: #080808;
+}
+
+.QouteButton{
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: black;
+    color: #fff;
+    width: 300px;
+    padding: 7px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.ExistingQouteButton{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #fff;
+    border-radius: 20px;
+    width: 300px;
+    padding: 12px;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.OurPolicies {
+    border-bottom: 4px solid;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.ButtonWrapper{
+    position: absolute;
+    right: 170px;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.InsuranceHeader {
+    position: absolute;
+    left: 250px;
+    margin-top: 60px;
+    width: 800px;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.DropDownMenu {
+    position: absolute;
+    width:240px;
+    background-color: rgb(255, 255, 255);
+    z-index: 99999;
+    margin-left: 400px;
+    top: -160px;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.DropDownMenu input {
+    height: 40px;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: -10px;
+    border: 1px solid ;
+    padding-left: 30px ;
+}
+
+.DropDownMenu p {
+    font-size: 15px;
+    border-bottom: 1px solid;
+}
+
+.DropDownMenu button {
+    background-color: #000000;
+    color: #fff;
+    font-weight: 40px;
+    font-size: 20px;
+    height: 60px;
+    width: 180px;
+    margin-left: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
