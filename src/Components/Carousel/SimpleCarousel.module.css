@@ -2,11 +2,12 @@
 
 .carouseldisplayframe {
     border-radius: 20px;
-    width: 80%;
+    width: 1700px;
+    min-width: 1700px;
     height: 500px;
     max-height: 90vh;
     margin-top: 50px;
-    margin-left: 220px;
+    margin-left: 230px;
     text-align: center;
     background-color: #eaebec;
     overflow-y: hidden;
@@ -70,7 +71,8 @@
 
 .CarouselItem {
     height: 100%;
-    width:100%;
+    width:1700px;
+    min-width: 1700px;
     display: inline-block;
     transition: all 500ms linear;
 }
@@ -78,22 +80,24 @@
 .CarouselItem img {
     height: 100%;
     max-width: 100%;
+    min-width: 100%;
     background-color: none;
 }
 
 .Navigation {
     position: absolute;
-    width: 90%;
+    width: 1900px;
+    min-width: 1900px;
     justify-content: center;
     display: flex;
     top: 580px;
-    margin-left: 100px;
+    margin-left: 120px;
 }
 
 .PositionIndicator {
     box-sizing: border-box;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border: 1px solid #000000;
     border-radius: 50%;
     margin: 5px;
@@ -158,10 +162,11 @@
 
 .ButtonWrapper{
     position: absolute;
-    margin-left: 1310px;
+    margin-left: 1510px;
     padding: 20px;
     margin-top: 80px;
     font-family: 'Lato' ,sans-serif;
+
 }
 
 .InsuranceHeader {
@@ -179,7 +184,7 @@
     width:240px;
     background-color: rgb(255, 255, 255);
     z-index: 99999;
-    margin-left:1350px;
+    margin-left:1555px;
     top: 428px;
     padding: 20px;
     border-bottom-left-radius: 20px;
