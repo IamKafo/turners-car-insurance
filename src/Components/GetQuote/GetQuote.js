@@ -14,20 +14,20 @@ const GetQuote = () => {
         <NavBar></NavBar>
         <div className="page2content">
 
-            <header> Car Insurance </header>
+            <header> Car insurance </header>
             <div className="policy-container">
                 <div className="policy-text">
                 <span className="turnersblue">Turners</span> has you covered. <br/>
                 See what each of our three vehicle policies offer:
-                <button onClick={(e) => setShowQoute(!showQoute)} className="existing-quote">Existing Quote?</button>
+                <button onClick={(e) => setShowQoute(!showQoute)} className="existing-quote"><b>Existing quote?</b></button>
                             {
                                 showQoute && (
                                             <div className='drop-down-menu'>
                                                     <h3>Your family name</h3>
                                                     <input type="text" name="name" placeholder='Enter your name here' />
-                                                    <h3>Your family name</h3>
-                                                    <input type="text" name="name" placeholder='Enter your name here' />
-                                                    <p>I can't remember my qoute number</p>
+                                                    <h3>Your quote number</h3>
+                                                    <input type="text" name="name" placeholder='Enter your quote number' />
+                                                    <p>I can't remember my quote number</p>
                                                     <button className='my-Qoute-Button'>My quote</button>
                                             </div>
                                              )

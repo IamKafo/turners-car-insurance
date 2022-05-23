@@ -30,7 +30,7 @@ const [showQoute5, setShowQoute5] = useState(false)
             </SimpleCarousel>
             
             <div className="title-phrase">
-                <h1>Why Tuners? We offer more than a great bargain.</h1>
+                <h1>Why Turners? We offer more than a great bargain.</h1>
             </div>
             <div className="homepage-content">
                 <div className="homepage-cards-containers">
@@ -57,75 +57,75 @@ const [showQoute5, setShowQoute5] = useState(false)
                     <h2>Frequently Asked Questions</h2>
                 </div>
                 <div className="faq-questions" onClick={(e) => setShowQoute1(!showQoute1)}>
-                    <p>What are your different types of policies?
+                    <h4>What are your different types of policies?
                         <Icon className='faq-plus-icon'icon="typcn:plus" />
-                    </p>
+                    </h4>
                     
     
                     {
                         showQoute1 && (
                             <div className="faq-dropdown-answers">
-                                <h4>At Turners Cars, we offer three types of policies: Comprehensive, Third Party Fire and Theft, and Third Party</h4>
+                                <p>At Turners Cars, we offer three types of policies: Comprehensive, Third Party Fire and Theft, and Third Party</p>
                             </div>
                         )
                     }
                 
                 </div>
                 <div className="faq-questions" onClick={(e) => setShowQoute2(!showQoute2)}>
-                    <p>Do you offer discount for multiple vehicle policies?
+                    <h4>Do you offer discount for multiple vehicle policies?
                         <Icon className='faq-plus-icon'icon="typcn:plus" />
-                    </p>
+                    </h4>
                     
     
                     {
                         showQoute2 && (
                             <div className="faq-dropdown-answers">
-                                <h4>Yes we do! Enter your vehicle details and see what you qualify for <u>here</u>. </h4>
+                                <p>Yes we do! Enter your vehicle details and see what you qualify for <u>here.</u> </p>
                             </div>
                         )
                     }
                 
                 </div>
                 <div className="faq-questions" onClick={(e) => setShowQoute3(!showQoute3)}>
-                    <p>How do I get a quote? 
+                    <h4>How do I get a quote? 
                         <Icon className='faq-plus-icon'icon="typcn:plus" />
-                    </p>
+                    </h4>
                     
     
                     {
                         showQoute3 && (
                             <div className="faq-dropdown-answers">
-                                <h4>You can get a quote on our website's home page: click on "Get a quote" or click <u>here</u> to get started. </h4>
+                                <p>You can get a quote on our website's home page: click on "Get a quote" or click <u>here</u> to get started. </p>
                             </div>
                         )
                     }
                 
                 </div>
                 <div className="faq-questions" onClick={(e) => setShowQoute4(!showQoute4)}>
-                    <p>How is my quote calculated?
+                    <h4>How is my quote calculated?
                         <Icon className='faq-plus-icon'icon="typcn:plus" />
-                    </p>
+                    </h4>
                     
     
                     {
                         showQoute4 && (
                             <div className="faq-dropdown-answers">
-                                <h4>Your quote is calculated from criteria such as: the make and model of your car and the type of license you hold.</h4>
+                                <p>Your quote is calculated from criteria such as: the make and model of your car and the type of license you hold.</p>
                             </div>
                         )
                     }
                 
                 </div>
                 <div className="faq-questions" onClick={(e) => setShowQoute5(!showQoute5)}>
-                    <p>What types of payment do you accept?
+                    <h4>What types of payment do you accept?
                         <Icon className='faq-plus-icon'icon="typcn:plus"  />
-                    </p>
+                    </h4>
                     
     
                     {
                         showQoute5 && (
                             <div className="faq-dropdown-answers">
-                                <h4>We accept all payments by direct debit, or by credit card and debit card.</h4>
+                                <p>We accept all payments by direct debit, or by credit card and debit card.</p>
                             </div>
                         )
                     }
