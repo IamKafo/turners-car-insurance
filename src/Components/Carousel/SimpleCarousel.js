@@ -78,6 +78,8 @@ function SimpleCarousel(props) {
                     <div className={classes.ButtonWrapper}>
                         <div className={classes.QouteButton}><NavLink className={classes.NavLink} to='/getquote'><b>Get a quote</b></NavLink></div>
                         <div className={classes.ExistingQouteButton} onClick={(e) => setShowQoute(!showQoute)}><b>Existing quote?</b></div>
+                        <div className={classes.DropDownQoute} >
+                </div>
                         <h3 className={classes.OurPolicies}>Compare our policies</h3>
                     </div>
                     <div className={classes.InsuranceHeader}>
@@ -87,22 +89,21 @@ function SimpleCarousel(props) {
             </div>
             <div className={classes.Navigation}>
                 <div className={classes.DropDownQoute} >
-                                    {
-                                        showQoute && (
-                                            <div className={classes.DropDownMenu} >
-                                                    <h3>Your family name</h3>
-                                                    <input type="text" name="name" placeholder='Enter your name here' />
-                                                    <h3>Your quote number</h3>
-                                                    <input type="text" name="name" placeholder='Enter your quote number' />
-                                                    
-                                                    <p>I can't remember my quote number</p>
-                                                    <button className={classes.MyQouteButton}>My quote</button>
-                                            </div>
-                                        )
-                                    }
                 </div>
                 {positionIndicators}
             </div>
+            {
+                showQoute && (
+                                <div className={classes.DropDownMenu} >
+                                    <h3>Your family name</h3>
+                                    <input type="text" name="name" placeholder='Enter your name here' />
+                                    <h3>Your quote number</h3>
+                                    <input type="text" name="name" placeholder='Enter your quote number' />
+                                    <p>I can't remember my quote number</p>
+                                    <button className={classes.MyQouteButton}>My quote</button>
+                                </div>
+                            )
+            }
         </div>
     )
 }
