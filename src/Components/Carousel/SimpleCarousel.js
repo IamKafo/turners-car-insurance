@@ -92,11 +92,10 @@ function SimpleCarousel(props) {
                                             <div className={classes.DropDownMenu} >
                                                     <h3>Your family name</h3>
                                                     <input type="text" name="name" placeholder='Enter your name here' />
-                                                    <h3>Your family name</h3>
-                                                    <input type="text" name="name" placeholder='Enter your name here' />
-                                                    <h3>Your family name</h3>
-                                                    <input type="text" name="name" placeholder='Enter your name here' />
-                                                    <p>I can't remember my qoute number</p>
+                                                    <h3>Your quote number</h3>
+                                                    <input type="text" name="name" placeholder='Enter your quote number' />
+                                                    
+                                                    <p>I can't remember my quote number</p>
                                                     <button className={classes.MyQouteButton}>My quote</button>
                                             </div>
                                         )
