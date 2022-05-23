@@ -61,6 +61,11 @@ body{
     list-style: none;
     margin-bottom: 12px;
     position: relative;
+    cursor: pointer;
+    
+}
+.col ul li:hover {
+    text-decoration: underline;
 }
 
 

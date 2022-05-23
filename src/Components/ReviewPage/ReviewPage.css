@@ -1,0 +1,12 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+
+.review-page-container {
+    width: 1600px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.progress-bar {
+    width:1440px;
+    min-width: 1440px;
+}
