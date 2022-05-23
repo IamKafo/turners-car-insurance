@@ -59,18 +59,6 @@ const NavBar = () => {
                 </div>
             </div>
         </div>
-        {/* <div className='navbar-dropdown-list'>
-        {
-                    isActive && (
-                        <div className="insurance-list">
-                            <h3>New quote & our policies</h3>
-                            <h3>Existing qoute</h3>
-                            <h3>Mechanical Breackdown Insurance</h3>
-                            <h3>Make a claim</h3>
-                        </div>
-                    )
-                }
-        </div> */}
     </>
   )
 }

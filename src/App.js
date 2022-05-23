@@ -1,14 +1,19 @@
 import './App.css';
-// import Footer from './Components/Footer/Footer';
 import HomePage from './Components/HomePage/HomePage';
-import NavBar from './Components/NavBar/NavBar';
+import NavBar from './Components/NavBar/NavBar'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Footer from './Components/Footer/Footer'
 
 function App() {
   return (
       <>
-        <NavBar/>
-        <HomePage/>
-        {/* <Footer/> */}
+        <Router>
+          <NavBar/>
+          <Routes>
+            <Route exact path="/" element={<HomePage />} />
+            {/* <Route exact path="/" element={<HomePage />} /> */}
+          </Routes>
+        </Router>
       </>
 
   );
