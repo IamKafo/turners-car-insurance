@@ -4,14 +4,14 @@ body{
     background:white;
 }
 
-footer{
+.footer{
     width:100%;
-    position:absolute;
     bottom:0;
     padding: 25px 0 25px;
     font-size: 15px;
     line-height: 20px;
     font-family: 'Lato', sans-serif;
+    
 
 
 }
@@ -23,6 +23,7 @@ footer{
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
+    border: 2px soild;
 }
 
 .col{
@@ -49,38 +50,38 @@ footer{
 }
 
 
-form{
+.form{
     display:flex;
 }
 
-ul li{
+.col ul li{
     list-style: none;
     margin-bottom: 12px;
     position: relative;
 }
 
 
-ul li a{
+.col ul li a{
     text-decoration: none;
     color:#4B5563;
 }
-ul li a:hover {
+.col ul li a:hover {
     text-decoration: underline;
 }
 
-ul .company {
+.col ul .company {
     padding-bottom: 7px;
     font-size: 18px;
     color: black;
 
 }
 
-ul .companya {
+col.ul .companya {
     color: black;
 }
 
 
-form{
+.form{
     padding-bottom: 10px;
     display: flex;
     align-items: center;
@@ -88,13 +89,13 @@ form{
     border-bottom: 1px solid black;
 
 }
-form i{
+.form i{
     font-size: 25px;
     padding-right: 5px;
 
 }
 
-form input{
+.form input{
     width:100%;
     font-size: 15px;
     background: transparent;
@@ -103,7 +104,7 @@ form input{
     outline: none;
 }
 
-form button{
+.form button{
     background: transparent;
     border: 0;
     outline: none;

@@ -10,8 +10,8 @@ function App() {
         <Router>
           <NavBar/>
           <Routes>
-            <Route exact path="/" element={<HomePage />} />
-            {/* <Route exact path="/" element={<HomePage />} /> */}
+            <Route exact path="/"  element={<HomePage />} />
+            {/* <Route  path="/getaquote" element={< />} /> */}
           </Routes>
         </Router>
       </>

@@ -8,7 +8,7 @@ import { faFacebook, faInstagram, faTwitter, faYoutube } from "@fortawesome/free
 const Footer = () => {
     return(
         <>
-        <footer>
+        <div className="footer">
             <div className="row">
                 <div className="col">
                     <img src={Logo} alt="logo" className="logo"/>
@@ -46,14 +46,14 @@ const Footer = () => {
                 </div>
                 <div className="col">
                     <h3> Get Updates</h3>
-                    <form>
+                    <form className="form">
                         <i><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></i>
                         <input type="email" placeholder="Enter your email" required></input>
                         <button type="submit"><FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></button>
                     </form>
                 </div>
             </div>
-        </footer>
+        </div>
         </>
     )
 }
