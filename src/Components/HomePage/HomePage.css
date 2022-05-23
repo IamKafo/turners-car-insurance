@@ -1,0 +1,95 @@
+
+
+.title-phrase {
+    text-align: center;
+    font-size: 25px;
+}
+
+.homepage-content {
+    display: flex;
+    justify-content: center;
+
+}
+
+.homepage-container::-webkit-scrollbar{
+    display: none;
+}
+
+.homepage-cards-containers {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 80px;
+
+}
+
+.homepage-cards1 {
+    background-image: url(../../Images/MicrosoftTeams-image\ \(4\).png);
+    background-size: cover;
+    border-radius: 24px;
+    height: 250px;
+    width: 400px;
+}
+
+.homepage-cards2 {
+    background-image: url(../../Images/MicrosoftTeams-image\ \(3\).png);
+    background-size: cover;
+    border-radius: 24px;
+    height: 250px;
+    width: 400px;
+}
+
+.homepage-cards3 {
+    background-image: url(../../Images/MicrosoftTeams-image\ \(5\).png);
+    background-size: cover;
+    border-radius: 24px;
+    height: 250px;
+    width: 400px;
+}
+
+.homepage-cards-title {
+    text-align: center;
+    margin-top: -18px;
+    line-height: 20px;
+}
+
+.faq-header {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.faq-questions {
+    border-bottom: 0.6px solid rgb(153, 153, 153);
+    width: 60%;
+    margin-left: 320px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.faq-questions p {
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+   
+}
+
+.faq-plus-icon {
+    width: 30px;
+    height: 30px;
+    color: #CCCED0 ;
+}
+
+.faq-dropdown-answers {
+    margin-top: -30px;
+    transition: 0.5s ease-in-out;
+}
+
