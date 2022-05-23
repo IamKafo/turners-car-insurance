@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import './NavBar.css'
 import Logo from "./turnerscars_logo.png"
 import { Icon } from '@iconify/react';
+import { NavLink } from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -16,7 +17,7 @@ const NavBar = () => {
         <div className="navbar-container">
             
             <div className="navbar-selection">
-                <img className='logo-img' src={Logo} alt="logo" />
+                <NavLink to='/'><img className='logo-img' src={Logo} alt="logo" /></NavLink>
                 <h3>
                     Auctions
                 </h3>
