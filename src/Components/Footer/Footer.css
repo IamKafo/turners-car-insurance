@@ -5,9 +5,11 @@ body{
 }
 
 .footer{
-    width:100%;
-    bottom:0;
-    padding: 25px 0 25px;
+    width:1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 25px;
     font-size: 15px;
     line-height: 20px;
     font-family: 'Lato', sans-serif;
@@ -17,13 +19,14 @@ body{
 }
 
 .row{
-    width: 85%;
-    margin: auto;
+    width: auto;
+    margin-left: 7%;
+    margin-right: 7%;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
-    border: 2px soild;
+    justify-content: space-between; 
+    min-width: 800px;
 }
 
 .col{
@@ -65,8 +68,11 @@ body{
     text-decoration: none;
     color:#4B5563;
 }
+
 .col ul li a:hover {
+
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .col ul .company {
@@ -76,9 +82,11 @@ body{
 
 }
 
+
 col.ul .companya {
     color: black;
 }
+
 
 
 .form{

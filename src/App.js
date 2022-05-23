@@ -1,8 +1,10 @@
 import './App.css';
+
 import HomePage from './Components/HomePage/HomePage';
 import NavBar from './Components/NavBar/NavBar'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import Footer from './Components/Footer/Footer'
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
             {/* <Route  path="/getaquote" element={< />} /> */}
           </Routes>
         </Router>
+
       </>
 
   );

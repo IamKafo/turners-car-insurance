@@ -26,21 +26,21 @@ const Footer = () => {
                 </div>
                 <div className="col">
                     <ul>
-                        <li className="company"><a href="" className="companya">Company</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Pricing</a></li>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Contact us</a></li>
-                        <li><a href="">Testimonials</a></li>
+                        <li className="company">Company</li>
+                        <li>Blog</li>
+                        <li>Pricing</li>
+                        <li>About us</li>
+                        <li>Contact us</li>
+                        <li>Testimonials</li>
 
                     </ul>
                 </div>
                 <div className="col">
                     <ul>
-                        <li><a href="">Legal policy</a></li>
-                        <li><a href="">Status policy</a></li>
-                        <li><a href="">Privacy policy</a></li>
-                        <li><a href="">Terms of service</a></li>
+                        <li>Legal policy</li>
+                        <li>Status policy</li>
+                        <li>Privacy policy</li>
+                        <li>Terms of service</li>
 
                     </ul>
                 </div>
