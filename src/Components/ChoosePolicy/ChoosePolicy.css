@@ -62,16 +62,18 @@ header{
     width:240px;
     background-color: rgb(248, 248, 248);
     z-index: 99999;
-    margin-left: 950px;
-    top: 335px;
-    padding: 20px;
+    margin-left: 953px;
+    top: 315px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;  
 }
 
 
 .drop-down-menu input {
-    height: 50px;
+    height: 40px;
     width: 90%;
     border-radius: 15px;
     margin-top: -10px;
@@ -99,11 +101,11 @@ header{
     color: #fff;
     font-weight: 40px;
     font-size: 20px;
-    height: 60px;
+    height: 50px;
     width: 180px;
     margin-left: 30px;
-    margin-top: 40px;
-    margin-bottom: -10px;
+    margin-top: 50px;
+    margin-bottom: -40px;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -205,8 +207,17 @@ table{
     border-left-color: transparent;
     border-right-color: transparent;
     border-top-color: transparent;
+
+
 }
 
+.NavLink {
+    text-decoration: none;
+}
+
+.NavLink:visited {
+    color: #fff;
+}
 .get-quote:hover{
     cursor: pointer;
 }
