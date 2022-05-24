@@ -61,10 +61,15 @@ body{
     list-style: none;
     margin-bottom: 12px;
     position: relative;
+    cursor: pointer;
+    
+}
+.col ul li:hover {
+    text-decoration: underline;
 }
 
 
-.col ul li a{
+.col ul li{
     text-decoration: none;
     color:#4B5563;
 }
