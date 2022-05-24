@@ -363,7 +363,7 @@ const ExistingDetailsPage = () => {
             </div>
         </div>
         <div className='step-3-container-2'>
-        <div className="step-3-card">
+        <div className="step-3-card-2">
                 <div className="inside-step-3-card">
                     <Icon icon="ant-design:plus-outlined" color="white" width={77} className='step-3-icon' />
                     <div className="inside-phrase-card-3">
@@ -372,6 +372,10 @@ const ExistingDetailsPage = () => {
                     </div>
                 </div>
             </div>
+        </div>
+        <div className="existing-button">
+            <button className='existing-button-1'>Get a new quote</button>
+            <button className='existing-button-2'>Review & proceed</button>
         </div>
         <Footer/>
         </>
