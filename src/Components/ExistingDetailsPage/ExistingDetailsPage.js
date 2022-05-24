@@ -9,7 +9,7 @@ const ExistingDetailsPage = () => {
     return (
         <>
         <NavBar/>
-        <img src={ProgressBar} alt="progress bar" className='progress-bar'/>
+        <img src={ProgressBar} alt="progress bar"  className='progress-bar'/>
         <div className='existing-details-page-container'>
                 <div className='existing-details-header'>Existing quote - Comprehensive</div>
         </div>
@@ -180,6 +180,197 @@ const ExistingDetailsPage = () => {
                     <label htmlFor="" className='bottom-answer-yes'>No</label>
                 </div>
                 </form>
+                
+            </div>
+        </div>
+        <div className='down-arrow'>
+            <Icon icon="ant-design:down-outlined" width={40} />
+        </div>
+
+        <div className="ex-quote-box">
+            <p className='ex-steps'>
+                STEP 2 <br/> Personal <br/>details 
+            </p>
+            <div className="ex-card">
+                <p className='ex-card-title'>
+                    Personal details 
+                </p>
+                <p className='ex-card-please'>
+                    Please enter the following details for the vehicle owner/main driver:
+                </p> 
+                <div className='ex-date-bottom-containe-2'>
+                <label htmlFor="date" className='ex-date-bottom'>Do you have other car insurance with Turner?</label>
+                    <input type="radio" name='answer' className='bottom-answer' />
+                    <label htmlFor="" className='bottom-answer-yes'>Yes</label>
+                    <input type="radio" name='answer' className='bottom-answer-2'/>
+                    <label htmlFor="" className='bottom-answer-yes'>No</label>
+                </div>
+                <div className='ex-bottom-1'>
+                    <label htmlFor="date" className='ex-date-bottom'>Full name:</label>
+                    <br />
+                    <input className='ex-input-2' type='text' placeholder='Fred Daggs'/>
+                </div>
+                <form action="">
+                <label htmlFor="date" className='ex-date'>Date of birth:</label>
+                <select className='ex-selection'>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                    <option value=""selected>13</option>
+                    <option value="">14</option>
+                    <option value="">15</option>
+                    <option value="">16</option>
+                    <option value="">17</option>
+                    <option value="">18</option>
+                    <option value="">19</option>
+                    <option value="">20</option>
+                    <option value="">21</option>
+                    <option value="">22</option>
+                    <option value="">23</option>
+                    <option value="">24</option>
+                    <option value="">25</option>
+                    <option value="">26</option>
+                    <option value="">27</option>
+                    <option value="">28</option>
+                    <option value="">29</option>
+                    <option value="">30</option>
+                    <option value="">31</option>
+                </select>
+                <select className='ex-selection'>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August"selected>August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value=" November"> November</option>
+                    <option value="December">December</option>
+                </select>
+                <select className='ex-selection'>
+                    <option value="year">1980</option>
+                    <option value="year"selected>1981</option>
+                    <option value="year">1982</option>
+                    <option value="year">1983</option>
+                    <option value="year">1984</option>
+                    <option value="year">1985</option>
+                    <option value="year">1986</option>
+                    <option value="year">1987</option>
+                    <option value="year">1988</option>
+                    <option value="year">1989</option>
+                    <option value="year">1990</option>
+                    <option value="year">1991</option>
+                    <option value="year">1992</option>
+                    <option value="year">1993</option>
+                    <option value="year">1994</option>
+                    <option value="year">1995</option>
+                    <option value="year">1996</option>
+                    <option value="year">1997</option>
+                    <option value="year">1998</option>
+                    <option value="year">1999</option>
+                    <option value="year">2000</option>
+                    <option value="year">2001</option>
+                </select>
+                <br />
+                <label htmlFor="date" className='ex-date'>Gender:</label>
+                <select className='ex-selection-2'>
+                    <option value="type">Male</option>
+                    <option value="type"selected>Female</option>
+                    <option value="type">Other</option>
+                </select>
+                <br />
+                <label htmlFor="date" className='ex-date'>Licence:</label>
+                <Icon icon="bi:question-circle" color="white" width={25} />
+                <select className='ex-selection-1'>
+                    <option value="type">NZ Full</option>
+                    <option value="type"selected>NZ Restricted</option>
+                    <option value="type">NZ Learners</option>
+                </select>
+                <br />
+                <label htmlFor="date" className='ex-date'>Age when licence was first issued:</label>
+                <select className='ex-selection-2'>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                    <option value=""selected>13</option>
+                    <option value="">14</option>
+                    <option value="">15</option>
+                    <option value="">16</option>
+                    <option value="">17</option>
+                    <option value="">18</option>
+                    <option value="">19</option>
+                    <option value="">20</option>
+                    <option value="">21</option>
+                    <option value="">22</option>
+                    <option value="">23</option>
+                    <option value="">24</option>
+                    <option value="">25</option>
+                    <option value="">26</option>
+                    <option value="">27</option>
+                    <option value="">28</option>
+                    <option value="">29</option>
+                    <option value="">30</option>
+                    <option value="">31</option>
+                </select>
+                <br />
+                <div className='ex-bottom'>
+                    <label htmlFor="date" className='ex-date-bottom'>Postal address:</label>
+                    <Icon icon="bi:question-circle" color="white" width={25} />
+                    <br />
+                    <input className='ex-input-2' type='text' placeholder='54 Something Street, Wellington'/>
+                </div>
+
+                </form>
+                
+            </div>
+        </div>
+        <div className='down-arrow'>
+            <Icon icon="ant-design:down-outlined" width={40} />
+        </div>
+        <div className='step-3-container'>
+            <div className="step-3-title">
+                STEP 3 <br />Add other <br /> drivers
+            </div>
+            <div className="step-3-card">
+                <div className="inside-step-3-card">
+                    <Icon icon="ant-design:plus-outlined" color="white" width={77} />
+                    <div className="inside-phrase-card-3">
+                        <h1>Add other drivers</h1>
+                        <p><b>include details of additional drivers</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className='step-3-container-2'>
+        <div className="step-3-card">
+                <div className="inside-step-3-card">
+                    <Icon icon="ant-design:plus-outlined" color="white" width={77} className='step-3-icon' />
+                    <div className="inside-phrase-card-3">
+                        <h1>Save up to $120</h1>
+                        <p><b>By adding another vehicle to this quote, you will receive a Multi-Policy Discount. </b></p>
+                    </div>
+                </div>
             </div>
         </div>
         <Footer/>
