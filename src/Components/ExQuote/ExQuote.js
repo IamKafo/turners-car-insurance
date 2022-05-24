@@ -9,7 +9,6 @@ const ExQuote = () => {
     <>
         <NavBar/>
         <div className="ex-quote">
-            
             <div className="existing-title">
                 <img src={Eximg} alt="" min-width={1600} max-width={1600} />
                 <h1>Existing quote - Comprehensive</h1>
