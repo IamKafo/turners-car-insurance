@@ -2,25 +2,40 @@
 
 
 .navbar-container {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato', sans-serif;
     border-bottom:2px #00000009 solid;
     box-shadow: 1px 1px 9px 9px #00000039;
     padding: 10px;
-    min-width: 2000px;
-    max-width: 3100px;
-    border-bottom-left-radius: 30px ;
-    border-bottom-right-radius: 30px ;
-    font-family: 'Lato', sans-serif;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    min-width: 1600px;
 
+}
+.navbar-components {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar-selection{
     display: flex;
     justify-content: space-evenly;
 }
-
+.logo-img {
+    margin-right: 20px;
+    
+}
 .navbar-selection h3 {
     cursor: pointer;
     margin-block-start: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .down-arrow-icon {
@@ -36,14 +51,16 @@
 .form-search-container {
     display: flex;
     align-items: center;
+    padding-right: 60px;
+    margin-left: 30px;
 }
 
 .navbar-search-input {
     position: relative;
     border-radius: 10px;
-    height: 40px;
+    height: 45px;
     background-color: #00000009;
-    padding-left: 30px;
+    padding-left: 40px;
     border: 0.1px #00000009 solid;
 }
 
@@ -56,11 +73,12 @@
 .language-icon {
     display: flex;
     align-items: center;
+    margin-right: 30px;
 }
 
 .navbar-buttons {
- display: flex;
- align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -74,11 +92,14 @@
     border-left-color: transparent;
     border-right-color: transparent;
     border-top-color: transparent;
+    margin-left: 20px;
 }
 
 .navbar-login-button{
     background-color: #fff;
-    border: 0.8px solid #00000009;
+    border: 1px solid #00000009;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .navbar-signup-button {
@@ -101,15 +122,20 @@
 .insurance-list {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
     background-color: #fff;
     cursor: pointer;
+    position: relative; top:20px;
+    
     
 }
 
 .insurance-list h3 {
     margin-top: -5px;
     margin-left: 4px;
+    font-size: 16px;
     cursor: pointer;
 }
 
