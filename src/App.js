@@ -20,7 +20,6 @@ function App() {
             <Route  path="/choosepolicy" element={<ChoosePolicy />} />
             <Route path="/newquote" element={<NewQuotePage/>} />
             <Route path="/reviewquote" element={<ReviewPage/>} />
-
           </Routes>
         </Router>
       </>
