@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import { Icon } from '@iconify/react';
 import SimpleCarousel from '../Carousel/SimpleCarousel'
-import img1 from '../../Images/MicrosoftTeams-image.png'
-import img2 from '../../Images/MicrosoftTeams-image (1).png'
-import img3 from '../../Images/MicrosoftTeams-image (2).png'
+import img1 from '../../Images/Carousel - Need insurance.png'
+import img2 from '../../Images/Check out our auctions (1).png'
+import img3 from '../../Images/Check out our auctions.png'
 import './HomePage.css'
 import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';

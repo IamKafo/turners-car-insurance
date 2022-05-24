@@ -2,20 +2,27 @@
 
 .carouseldisplayframe {
     border-radius: 20px;
-    width: 1700px;
-    min-width: 1700px;
+    width: 80%;
+    max-width: 80%;
     height: 500px;
     max-height: 90vh;
     margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: 230px;
-    text-align: center;
-    background-color: #eaebec;
     overflow-y: hidden;
     overflow-x: hidden;
     white-space: nowrap;
     z-index: -22;
     caret-color: transparent;
     font-family: 'Lato', sans-serif;
+}
+
+.HomepageContainer {
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
 }
  
 .carouseldisplayframe::-webkit-scrollbar {
@@ -162,30 +169,20 @@
 
 .ButtonWrapper{
     position: absolute;
-    margin-left: 1510px;
+    right: 12%;
     padding: 20px;
     margin-top: 80px;
     font-family: 'Lato' ,sans-serif;
 
 }
 
-.InsuranceHeader {
-    position: absolute;
-    left: 280px;
-    margin-top: 60px;
-    width: 1000px;
-    font-size: 45px;
-    line-height: 90px;
-    font-family: 'Lato' ,sans-serif;
-}
-
 .DropDownMenu {
     position: absolute;
-    width:240px;
+    min-width:240px;
     background-color: rgb(255, 255, 255);
     z-index: 99999;
-    margin-left:1555px;
-    top: 428px;
+    right: 14.3%;
+    top: 464px;
     padding: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -193,7 +190,7 @@
 
 .DropDownMenu input {
     height: 40px;
-    width: 90%;
+    min-width: 90%;
     border-radius: 10px;
     margin-top: -10px;
     border: 1px solid ;

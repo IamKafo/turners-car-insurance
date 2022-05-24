@@ -70,7 +70,7 @@ function SimpleCarousel(props) {
     
 
     return (
-        <div>
+        <div className={classes.HomepageContainer}>
             <div className={classes.Container}>
                 <div className={classes.LeftArrow} onClick={prevClickHandler}>❰</div>
                 <div className={classes.carouseldisplayframe}>
@@ -81,9 +81,6 @@ function SimpleCarousel(props) {
                             <div className={classes.ExistingQouteButton} onClick={(e) => setShowQoute(!showQoute)}><b>Existing quote?</b></div>
                             <div className={classes.DropDownQoute} ></div>
                         <h3 className={classes.OurPolicies}>Compare our policies</h3>
-                    </div>
-                    <div className={classes.InsuranceHeader}>
-                        <h1>Need insurance? <br/> We've got you covered.</h1>
                     </div>
                 <div className={classes.RightArrow} onClick={nextClickHandler}>❱</div>
             </div>

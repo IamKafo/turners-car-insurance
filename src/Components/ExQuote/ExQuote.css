@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap');
+
+.existing-title {
+    text-align: center;
+    border: 2px solid;
+    margin-top: 30px;
+}
+
+.ex-quote-box {
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    min-width: 1239px;
+    min-height: 700px;
+    
+}
+
+.ex-steps {
+    font-family: 'Lato' sans-serif;
+    font-weight: 30px;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ex-card-title{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Lato' sans-serif;
+    line-height: 0;
+}
+
+.ex-card-please {
+    color: #fff;
+    line-height: 5px;
+    font-size: 25px;
+}
+
+.ex-date {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.ex-bottom {
+    border: 2px solid pink;
+    margin-top: 70px;
+    margin-left: 0;
+    line-height: -0px;
+    
+}
+
+.ex-date-bottom {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 25px;
+    font-family: 'Lato' sans-serif;
+    
+}
+
+.ex-date-bottom-container {
+    border: 2px solid green;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+
+}
+
+.ex-card {
+    border: 2px solid #0076be; ;
+    border-radius: 10px;
+    width: 1294px;
+    min-height: 611px;
+    padding: 20px 0px 0px 30px;
+    background-color: #0076be;
+}
+
+.ex-selection {
+    margin: 20px 10px 10px 10px;
+    border: 2px solid rgb(202, 202, 202);
+    border-radius: 6px;
+    height: 40px;
+    width:250px;
+    font-size: 20px;
+    font-family: 'Lato' sans-serif;
+}
+
+.ex-input, .ex-input-2 {
+    margin: 20px 0px 0px 20px;
+    border: 2px solid rgb(202, 202, 202);
+    border-radius: 6px;
+    height: 34px;
+    width:300px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: 'Lato' sans-serif;
+}
+
+.ex-input-2 {
+    width: 940px;
+    margin-left: 0px;
+}
+
+.ex-input-3 {
+    margin: 20px 0px 0px 20px;
+    border: 2px solid rgb(202, 202, 202);
+    border-radius: 6px;
+    height: 34px;
+    width:200px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: 'Lato' sans-serif; 
+}
+
+.ex-selection::-webkit-scrollbar{
+    display: none;
+}
+
+.bottom-answer {
+    width: 30px;
+    height: 30px;
+    margin-left: 100px;
+}
+
+.bottom-answer-2 {
+    width: 30px;
+    height: 30px;
+    margin-left: 150px;
+}
+
+.bottom-answer-yes {
+    font-size: 25px;
+    font-family: 'Lato' sans-serif;
+    color: #fff;
+}
