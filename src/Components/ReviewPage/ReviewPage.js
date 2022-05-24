@@ -16,7 +16,44 @@ const ReviewPage = () => {
                 <div className='excess-description'> This is what you pay when you need to make a claim</div>
 
 
-                <div>CARDS PLACEHOLDER</div>
+
+
+                <div className='card-container'>
+                    <div className='card-row'>
+                        <div className='card'>
+                            <div className='card-header'>Fortnightly plan</div>
+                            <div className='plan-price'><span className="price-number">$28.93 </span> Fortnightly</div>
+                            <hr></hr>
+                            <div className='card-content'>Includes <span className='color-price'>$20</span> online discount<br/>Save $25 if you insure another vehicle</div>
+                            <div className='disclaimer'>*Paying fortnightly is our most<br/>popular payment frequency</div>
+                            <button className='selected-button'>Select</button>
+
+                        </div>
+                        <div className='card'>
+                            <div className='our-best-plan'>Our best plan</div>
+                            <div className='card-header-monthly'>Monthly plan</div>
+                            <div className='plan-price'><span className="price-number">$62.68 </span> Monthly</div>
+                            <hr></hr>
+                            <div className='card-content'>Includes <span className='color-price'>$40</span> online discount<br/>Save $25 if you insure another vehicle</div>
+                            <div className='disclaimer'>*Paying monthly is our flexi-plan.<br/>Click <span className='here-styled'>here</span> for more information</div>
+                            <button className='selected-button'>Select</button>
+
+                        </div>
+                        <div className='card'>
+                            <div className='card-header'>Annual plan</div>
+                            <div className='plan-price'><span className="price-number">$700.40 </span> Annually</div>
+                            <hr></hr>
+                            <div className='card-content'>Includes <span className='color-price'>$60</span> online discount<br/>Save $25 if you insure another vehicle</div>
+                            <div className='disclaimer'>*You save $45 per year if you<br/>choose to pay anually</div>
+                            <button className='selected-button'>Select</button>
+
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
                 <div className='quote-details'>Details of this policy</div>
                 <div className='review-row'>
 
