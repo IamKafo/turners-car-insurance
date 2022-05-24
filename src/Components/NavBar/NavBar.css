@@ -5,6 +5,8 @@
     border-bottom:2px #00000009 solid;
     box-shadow: 1px 1px 9px 9px #00000039;
     padding: 10px;
+    min-width: 1500px;
+    max-width: 2100px;
     border-bottom-left-radius: 30px ;
     border-bottom-right-radius: 30px ;
     font-family: 'Lato', sans-serif;
