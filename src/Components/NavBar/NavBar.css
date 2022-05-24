@@ -5,8 +5,8 @@
     border-bottom:2px #00000009 solid;
     box-shadow: 1px 1px 9px 9px #00000039;
     padding: 10px;
-    min-width: 1500px;
-    max-width: 2100px;
+    min-width: 2000px;
+    max-width: 3100px;
     border-bottom-left-radius: 30px ;
     border-bottom-right-radius: 30px ;
     font-family: 'Lato', sans-serif;
@@ -20,6 +20,7 @@
 
 .navbar-selection h3 {
     cursor: pointer;
+    margin-block-start: 20px;
 }
 
 .down-arrow-icon {

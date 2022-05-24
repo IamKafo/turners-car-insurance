@@ -18,9 +18,14 @@
 }
 
 .HomepageContainer {
+    /* border: 2px solid; */
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 2100px;
+    min-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 9px;
 }
  
@@ -181,7 +186,7 @@
     background-color: rgb(255, 255, 255);
     z-index: 99999;
     right: 14.3%;
-    top: 464px;
+    top: 462px;
     padding: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
