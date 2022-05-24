@@ -1,11 +1,12 @@
 import React, {useState} from "react";
-import "./GetQuote.css";
+import "./ChoosePolicy.css";
 import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faXmark, faCircleQuestion} from "@fortawesome/free-solid-svg-icons";
 
-const GetQuote = () => {
+const ChoosePolicy = () => {
 
     const [showQoute, setShowQoute] = useState(false)
 
@@ -17,7 +18,7 @@ const GetQuote = () => {
             <header> Car insurance </header>
             <div className="policy-container">
                 <div className="policy-text">
-                <span className="turnersblue">Turners</span> has you covered. <br/>
+                <div className="top-text"><span className="turnersblue">Turners</span> has you covered. <br/></div>
                 See what each of our three vehicle policies offer:
                 <button onClick={(e) => setShowQoute(!showQoute)} className="existing-quote"><b>Existing quote?</b></button>
                             {
@@ -85,8 +86,8 @@ const GetQuote = () => {
                         </tr>
                         <tr>
                             <td></td>
-                            <td className="best-policy7"><button className="get-quote">Get a quote</button></td>
-                            <td><button className="get-quote">Get a quote</button></td>
+                            <td className="best-policy7"><button className="get-quote"><NavLink className="NavLink" to='/newquote' >Get a quote</NavLink></button></td>
+                            <td ><button className="get-quote">Get a quote</button></td>
                             <td ><button className="get-quote">Get a quote</button></td>
                         </tr>
 
@@ -99,4 +100,4 @@ const GetQuote = () => {
     )
 }
 
-export default GetQuote;
+export default ChoosePolicy;
