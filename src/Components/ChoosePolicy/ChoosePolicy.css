@@ -38,14 +38,16 @@ header{
 .existing-quote {
     border: 1px solid rgb(0, 0, 0);
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 16px;
     width: 290px;
     padding: 13px;
     text-align: center;
     margin-top: 35px;
     font-size: 25px;
     cursor: pointer;
-    box-shadow: 2px 3px 6px 0px black;
+    box-shadow: 1px 3px 2px 0px #a9a9a9;
+    font-weight: bold;
+
 }
 
 .policy-container button {
@@ -251,7 +253,7 @@ table{
     --scale: 0;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(-80px) scale(var(--scale));
+    transform: translateX(-50%) translateY(-70px) scale(var(--scale));
     transition: 200ms transform;
     transform-origin: bottom center;
     font-size: 18px;
