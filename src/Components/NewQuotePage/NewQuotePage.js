@@ -2,7 +2,7 @@ import React from 'react';
 import '../NewQuotePage/NewQuotePage.css';
 import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
-import ProgressBar from './progressbar1.png';
+import ProgressBar from '../../Images/progressbar1.png';
 import { Icon } from '@iconify/react';
 import { NavLink } from 'react-router-dom';
 

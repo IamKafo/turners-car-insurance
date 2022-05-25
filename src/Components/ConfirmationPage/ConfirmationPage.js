@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer"; 
 import "./ConfirmationPage.css";
-import ProgressBar from './progressbar4.png';
+import ProgressBar from '../../Images/progressbar4.png';
 
 const ConfirmationPage = () => {
     return (
