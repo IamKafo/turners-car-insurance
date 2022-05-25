@@ -13,7 +13,7 @@ const BuyPolicy = () => {
         <div className='payment-page-container'>
                 <div className='payment-header'>Buy your policy</div>
 
-                    <div className='payment-card-row'>
+                    <div className='payment-row'>
                         <div className='payment-card'>
                             <div className='our-best-plan'>Our best plan</div>
                             <div className='card-header-monthly'>Monthly plan</div>
@@ -21,8 +21,7 @@ const BuyPolicy = () => {
                             <hr></hr>
                             <div className='card-content'>Includes <span className='color-price'>$40</span> online discount<br/>Save $25 if you insure another vehicle</div>
                             <div className='payment-disclaimer'>*Paying monthly is our flexi-plan.<br/>Click <span className='here-styled'>here</span> for more information</div>
-                            <div><b><u>View policy wording</u></b></div>
-                            <div><b><u>Go back to see other payment options</u></b></div>
+                            <div className="extra-info"><b><u>View policy wording <br/> Go back to see other payment options</u></b></div>
 
                         </div>
                         <div className="policy-selection">
