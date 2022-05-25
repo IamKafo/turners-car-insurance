@@ -24,9 +24,9 @@ const [showQoute5, setShowQoute5] = useState(false)
         <NavBar/>
         <div className="homepage-container">
             <SimpleCarousel>
-                <img src={img1} alt="cars" width={2600}  />
-                <img src={img2} alt="cars"  width={2600}/>
-                <img src={img3} alt="cars"  width={2600}/>
+                <img src={img1} alt="cars"  />
+                <img src={img2} alt="cars"  />
+                <img src={img3} alt="cars"  />
             </SimpleCarousel>
             
             <div className="title-phrase">
