@@ -89,6 +89,7 @@ function SimpleCarousel(props) {
                 </div>
                 {positionIndicators}
             </div>
+            <div className={classes.DropdownWrapper}>
             {
                 showQoute && (
                                 <div className={classes.DropDownMenu} >
@@ -101,6 +102,7 @@ function SimpleCarousel(props) {
                                 </div>
                             )
             }
+            </div>
         </div>
     )
 }
