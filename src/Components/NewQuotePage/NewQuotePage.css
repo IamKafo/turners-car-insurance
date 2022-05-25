@@ -298,7 +298,6 @@
     justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
-    padding: 70px;
 }
 
 .existing-button-1 {
@@ -314,7 +313,7 @@
     font-weight: bold;
     color: black;
     background-color: #e4e4e4;
-    border:  2px solid black ;
+    border:  1px solid black ;
     
 }
 
@@ -333,14 +332,6 @@
     color: black;
 }
 
-.NavLink {
-    text-decoration: none;
-}
-
-.existing-button-1 .NavLink:visited {
-    color: black;
-}
-
 .existing-button-3 {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 16px;
@@ -353,5 +344,13 @@
     box-shadow: 1px 3px 2px 0px #a9a9a9;
     font-weight: bold;
     background-color: white;
+    color: black;
+}
+
+.NavLink {
+    text-decoration: none;
+}
+
+.existing-button-1 .NavLink:visited {
     color: black;
 }

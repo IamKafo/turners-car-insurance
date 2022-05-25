@@ -3,6 +3,7 @@ import './ReviewPage.css';
 import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
 import ProgressBar from './progressbar2.png';
+import { NavLink } from 'react-router-dom';
 
 const ReviewPage = () => {
     return (
@@ -78,6 +79,8 @@ const ReviewPage = () => {
                 <div className='policy-wording'>View policy wording</div>
                 <div className='review-details'>Review your details</div>
                 <div> DETAILS PLACEHOLDER</div>
+
+                <button><NavLink className="NavLink" to='/buypolicy'>Payment page routing placeholder</NavLink></button>
 
             </div>
         <Footer/>
