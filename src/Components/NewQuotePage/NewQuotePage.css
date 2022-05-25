@@ -27,7 +27,7 @@
     margin-left: auto;
     margin-right: auto;
     /* WIDTH SET TO SIZE OF TEXT, KEEP GUESSING AND CHECKING, USE LARGEST NUMBER WHILE STILL STAYING ON 1 LINE*/
-    width: 637px;
+    width: 571px;
     text-align: center;
     font-size: 45px;
     font-family: 'Lato', sans-serif;
@@ -338,5 +338,20 @@
 }
 
 .existing-button-1 .NavLink:visited {
+    color: black;
+}
+
+.existing-button-3 {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 16px;
+    width: 290px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 1px 3px 2px 0px #a9a9a9;
+    font-weight: bold;
+    background-color: white;
     color: black;
 }

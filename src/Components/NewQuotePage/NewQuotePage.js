@@ -1,5 +1,5 @@
 import React from 'react';
-import '../ExistingDetailsPage/ExistingDetailsPage.css';
+import '../NewQuotePage/NewQuotePage.css';
 import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
 import ProgressBar from './progressbar1.png';
