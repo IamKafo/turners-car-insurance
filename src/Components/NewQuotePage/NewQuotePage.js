@@ -1,9 +1,10 @@
 import React from 'react';
-import '../ExistingDetailsPage/ExistingDetailsPage.css';
+import './NewQuotePage.css';
 import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
-import ProgressBar from './progressbar1.png';
+import ProgressBar from '../../Images/progressbar1.png';
 import { Icon } from '@iconify/react';
+import { NavLink } from 'react-router-dom';
 
 const NewQuotePage = () => {
     return (
@@ -16,7 +17,7 @@ const NewQuotePage = () => {
         <div className="ex-quote-box">
             <div className="title-step-1">
                 <p className='ex-steps-1'>
-                STEP 1 <br/> Car details 
+                STEP 1: <br/> Car details 
                 </p>
 
             </div>
@@ -198,7 +199,7 @@ const NewQuotePage = () => {
 
         <div className="ex-quote-box">
             <p className='ex-steps'>
-                STEP 2 <br/> Personal <br/>details 
+                STEP 2: <br/> Personal <br/>details 
             </p>
             <div className="ex-card">
                 <p className='ex-card-title'>
@@ -365,7 +366,7 @@ const NewQuotePage = () => {
         </div>
         <div className='step-3-container'>
             <div className="step-3-title">
-                STEP 3 <br />Add other <br /> drivers
+                STEP 3: <br />Add other <br /> drivers
             </div>
             <div className="step-3-card">
                 <div className="inside-step-3-card">
@@ -389,9 +390,9 @@ const NewQuotePage = () => {
             </div>
         </div>
         <div className="existing-button">
-            <button className='existing-button-1'><b>Go back</b></button>
+            <button className='existing-button-1'><b><NavLink className="NavLink" to='/choosepolicy'>Go back</NavLink></b></button>
             <button className='existing-button-3'><b>Save</b></button>
-            <button className='existing-button-2'><b>Get my quote</b></button>
+            <button className='existing-button-2'><b><NavLink className="NavLink" to='/reviewquote'>Get my quote</NavLink></b></button>
         </div>
         <Footer/>
         </>

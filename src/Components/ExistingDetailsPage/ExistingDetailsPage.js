@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
 import ProgressBar from '../../Images/progressbar1.png';
 import { Icon } from '@iconify/react'
+import { NavLink } from 'react-router-dom';
 
 const ExistingDetailsPage = () => {
     return (
@@ -11,11 +12,11 @@ const ExistingDetailsPage = () => {
         <NavBar/>
         <img src={ProgressBar} alt="progress bar"  className='progress-bar'/>
         <div className='existing-details-page-container'>
-                <div className='existing-details-header'>Existing quote - Comprehensive</div>
+                <div className='existing-details-header'>Existing  quote - Comprehensive</div>
         </div>
         <div className="ex-quote-box">
             <p className='ex-steps'>
-                STEP 1 <br/> Car details 
+                STEP 1: <br/> Car details 
             </p>
             <div className="ex-card">
                 <p className='ex-card-title'>
@@ -190,7 +191,7 @@ const ExistingDetailsPage = () => {
         </div>
         <div className="ex-quote-box">
             <p className='ex-steps'>
-                STEP 2 <br/> Personal <br/>details 
+                STEP 2: <br/> Personal <br/>details 
             </p>
             <div className="ex-card-2">
                 <p className='ex-card-title'>
@@ -353,7 +354,7 @@ const ExistingDetailsPage = () => {
         </div>
         <div className='step-3-container'>
             <div className="step-3-title">
-                STEP 3 <br />Add other <br /> drivers
+                STEP 3: <br />Add other <br /> drivers
             </div>
             <div className="step-3-card">
                 <div className="inside-step-3-card">
@@ -378,8 +379,8 @@ const ExistingDetailsPage = () => {
         </div>
         <div className="existing-button-container">
             <div className="existing-button">
-                <button className='existing-button-1'>Get a new quote</button>
-                <button className='existing-button-2'>Review & proceed</button>
+                <button className='existing-button-1'><NavLink className="NavLink" to='/newquote'>Get a new quote</NavLink></button>
+                <button className='existing-button-2'><NavLink className="NavLink" to='/reviewquote'>Review & proceed</NavLink></button>
             </div>
         </div>
         <Footer/>
