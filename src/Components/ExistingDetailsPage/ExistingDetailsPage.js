@@ -184,10 +184,11 @@ const ExistingDetailsPage = () => {
                 
             </div>
         </div>
-        <div className='down-arrow'>
-            <Icon icon="ant-design:down-outlined" width={40} />
+        <div className="container-arrowdown">
+            <div className='down-arrow'>
+                <Icon icon="ant-design:down-outlined" width={40} />
+            </div>
         </div>
-
         <div className="ex-quote-box">
             <p className='ex-steps'>
                 STEP 2: <br/> Personal <br/>details 
@@ -346,8 +347,10 @@ const ExistingDetailsPage = () => {
                 
             </div>
         </div>
-        <div className='down-arrow'>
-            <Icon icon="ant-design:down-outlined" width={40} />
+        <div className="container-arrowdown">
+            <div className='down-arrow'>
+                <Icon icon="ant-design:down-outlined" width={40} />
+            </div>
         </div>
         <div className='step-3-container'>
             <div className="step-3-title">
@@ -374,9 +377,11 @@ const ExistingDetailsPage = () => {
                 </div>
             </div>
         </div>
-        <div className="existing-button">
-            <button className='existing-button-1'><NavLink className="NavLink" to='/newquote'>Get a new quote</NavLink></button>
-            <button className='existing-button-2'><NavLink className="NavLink" to='/reviewquote'>Review & proceed</NavLink></button>
+        <div className="existing-button-container">
+            <div className="existing-button">
+                <button className='existing-button-1'><NavLink className="NavLink" to='/newquote'>Get a new quote</NavLink></button>
+                <button className='existing-button-2'><NavLink className="NavLink" to='/reviewquote'>Review & proceed</NavLink></button>
+            </div>
         </div>
         <Footer/>
         </>
