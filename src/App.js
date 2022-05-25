@@ -24,8 +24,6 @@ function App() {
             <Route path="/reviewquote" element={<ReviewPage/>} />
             <Route path="/buypolicy" element={<BuyPolicy/>} />
             <Route path="/confirm" element={<ConfirmationPage/>} />
-
-
           </Routes>
         </Router>
       </>
