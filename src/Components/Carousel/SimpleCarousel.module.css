@@ -138,7 +138,7 @@
     background-color: black;
     color: #fff;
     width: 287px;
-    padding: 7px;
+    padding: 9px;
     text-align: center;
     font-size: 25px;
     cursor: pointer;
@@ -166,11 +166,15 @@
 }
 
 .OurPolicies {
+
     border-bottom: 2px solid;
+    width: 230px;
     text-align: center;
     font-size: 25px;
     cursor: pointer;
     margin-top: 20px;
+    margin-left: 34px;
+    margin-right: auto;
 }
 
 .ButtonWrapper{
