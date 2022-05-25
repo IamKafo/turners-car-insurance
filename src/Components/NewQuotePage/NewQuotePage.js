@@ -12,7 +12,7 @@ const NewQuotePage = () => {
         <NavBar/>
         <img src={ProgressBar} alt="progress bar" className='progress-bar'/>
         <div className='new-quote-page-container'>
-                <div className='existing-details-header'>New quote - Comprehensive</div>
+                <div className='new-details-header'>New quote - Comprehensive</div>
         </div>
         <div className="ex-quote-box">
             <p className='ex-steps'>
@@ -91,7 +91,7 @@ const NewQuotePage = () => {
                     <option value="year">2023</option>
                 </select>
                 <br />
-                <label htmlFor="date" className='ex-date'>Car registration number:</label>
+                <label htmlFor="date" className='ex-date-bubble'>Car registration number:</label>
                 <Icon icon="bi:question-circle" color="white" width={25} />
                 <input className='ex-input' type='text' placeholder='ABC123'/>
                 <br />
@@ -182,7 +182,7 @@ const NewQuotePage = () => {
                     <Icon icon="bi:question-circle" color="white" width={25} />
                     <input type="radio" name='answer' className='bottom-answer' />
                     <label htmlFor="" className='bottom-answer-yes'>Yes</label>
-                    <input type="radio" name='answer' className='bottom-answer-2'/>
+                    <input type="radio" name='answer' className='bottom-answer-2' checked/>
                     <label htmlFor="" className='bottom-answer-yes'>No</label>
                 </div>
                 </form>
@@ -191,7 +191,7 @@ const NewQuotePage = () => {
         </div>
         <div className="container-arrowdown">
             <div className='down-arrow'>
-                <Icon icon="ant-design:down-outlined" width={40} />
+                <Icon icon="ant-design:down-outlined" width={60} />
             </div>
         </div>
         <div className="ex-quote-box">
@@ -202,20 +202,20 @@ const NewQuotePage = () => {
                 <p className='ex-card-title'>
                     Personal details 
                 </p>
-                <p className='ex-card-please'>
+                <p className='bottom-card-subtitle'>
                     Please enter the following details for the vehicle owner/main driver:
                 </p> 
                 <div className='ex-date-bottom-containe-2'>
-                <label htmlFor="date" className='ex-date-bottom'>Do you have other car insurance with Turner?</label>
+                <label htmlFor="date" className='ex-date-bottom'>Do you have other car insurance with Turners?</label>
                     <input type="radio" name='answer' className='bottom-answer' />
                     <label htmlFor="" className='bottom-answer-yes'>Yes</label>
-                    <input type="radio" name='answer' className='bottom-answer-2'/>
+                    <input type="radio" name='answer' className='bottom-answer-2' checked/>
                     <label htmlFor="" className='bottom-answer-yes'>No</label>
                 </div>
                 <div className='ex-bottom-1'>
                     <label htmlFor="date" className='ex-date-bottom'>Full name:</label>
                     <br />
-                    <input className='ex-input-2' type='text' placeholder='Fred Daggs'/>
+                    <input className='ex-input-22' type='text' placeholder='Fred Daggs'/>
                 </div>
                 <form action="">
                 <label htmlFor="date" className='ex-date'>Date of birth:</label>
@@ -360,7 +360,7 @@ const NewQuotePage = () => {
         </div>
         <div className="container-arrowdown">
             <div className='down-arrow'>
-                <Icon icon="ant-design:down-outlined" width={40} />
+                <Icon icon="ant-design:down-outlined" width={60} />
             </div>
         </div>
         <div className='step-3-container'>
@@ -391,7 +391,7 @@ const NewQuotePage = () => {
         <div className="existing-button-container">
             <div className="existing-button">
                 <button className='existing-button-1'><b><NavLink className="NavLink" to='/choosepolicy'>Go back</NavLink></b></button>
-                <button className='existing-button-3'><b>Save</b></button>
+                <button className='save-button'><b>Save</b></button>
                 <button className='existing-button-2'><b><NavLink className="NavLink" to='/reviewquote'>Get my quote</NavLink></b></button>
             </div>
         </div>
