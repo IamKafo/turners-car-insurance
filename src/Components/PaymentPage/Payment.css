@@ -34,21 +34,23 @@
 
 }
 
-.payment-card-row {
+.payment-row {
     width: 1440px;
     display: flex;
-    margin-left: 50px;
+    margin-left: 230px;
+    margin-right: 50px;
     flex-wrap: wrap;
     align-items: flex-start;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .payment-card {
     width: 380px;
     height: 500px;
-    margin: auto;
+    margin-right: 100px;
     background-color: #f0f7fb;
-    box-shadow: 0px 0px 15px -5px;
+    box-shadow: 0px 0px 25px -5px;
     border: 1px;
     border-radius: 10px;
     text-align: center;
@@ -56,13 +58,20 @@
 
 .policy-selection {
     font-size: 35px;
-    margin-left: 100px;
+    width: 700px;
 }
 
 .policy-description-list {
     font-size: 30px;
+    color: #4B5563;
+    line-height: 49px;
+    margin-left: -15px;
 }
 
 .payment-disclaimer {
     margin-bottom: 35px;
+}
+
+.extra-info:hover {
+    cursor: pointer;
 }
