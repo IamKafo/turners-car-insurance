@@ -46,7 +46,7 @@ const NewQuotePage = () => {
                     <option value="">15</option>
                     <option value="">16</option>
                     <option value="">17</option>
-                    <option value="" selected>18</option>
+                    <option value="">18</option>
                     <option value="">19</option>
                     <option value="">20</option>
                     <option value="">21</option>
@@ -71,7 +71,7 @@ const NewQuotePage = () => {
                     <option value="June">June</option>
                     <option value="July">July</option>
                     <option value="August">August</option>
-                    <option value="September" selected>September</option>
+                    <option value="September">September</option>
                     <option value="October">October</option>
                     <option value=" November"> November</option>
                     <option value="December">December</option>
@@ -93,7 +93,7 @@ const NewQuotePage = () => {
                 <br />
                 <label htmlFor="date" className='ex-date-bubble'>Car registration number:</label>
                 <Icon icon="bi:question-circle" color="white" width={25} />
-                <input className='ex-input' type='text' placeholder='ABC123'/>
+                <input className='ex-input' type='text' placeholder='ABC123' required/>
                 <br />
                 <select className='ex-selection-1'>
                     <option value="year"selected>Year</option>
@@ -169,13 +169,13 @@ const NewQuotePage = () => {
                     <option value="car">Volvo</option>
                     <option value="car">Zeta</option>
                 </select>
-                <input className='ex-input-3' type='text' placeholder='Model'/>
+                <input className='ex-input-3' type='text' placeholder='Model' required/>
                 <br />
                 <div className='ex-bottom'>
                     <label htmlFor="date" className='ex-date-bottom'>Address parked at overnight:</label>
                     <Icon icon="bi:question-circle" color="white" width={25} />
                     <br />
-                    <input className='ex-input-2' type='text' placeholder='54 Something Street, Wellington'/>
+                    <input className='ex-input-2' type='text' placeholder='54 Something Street, Wellington' required/>
                 </div>
                 <div className='ex-date-bottom-container'>
                 <label htmlFor="date" className='ex-date-bottom'>Any modifications to your vechicle:</label>
@@ -215,7 +215,7 @@ const NewQuotePage = () => {
                 <div className='ex-bottom-1'>
                     <label htmlFor="date" className='ex-date-bottom'>Full name:</label>
                     <br />
-                    <input className='ex-input-22' type='text' placeholder='Fred Daggs'/>
+                    <input className='ex-input-22' type='text' placeholder='Fred Daggs' required/>
                 </div>
                 <form action="">
                 <label htmlFor="date" className='ex-date'>Date of birth:</label>
@@ -233,7 +233,7 @@ const NewQuotePage = () => {
                     <option value="">10</option>
                     <option value="">11</option>
                     <option value="">12</option>
-                    <option value=""selected>13</option>
+                    <option value="">13</option>
                     <option value="">14</option>
                     <option value="">15</option>
                     <option value="">16</option>
@@ -262,7 +262,7 @@ const NewQuotePage = () => {
                     <option value="May">May</option>
                     <option value="June">June</option>
                     <option value="July">July</option>
-                    <option value="August"selected>August</option>
+                    <option value="August">August</option>
                     <option value="September">September</option>
                     <option value="October">October</option>
                     <option value=" November"> November</option>
@@ -271,7 +271,7 @@ const NewQuotePage = () => {
                 <select className='ex-selection'>
                     <option value="year"selected>Year</option>
                     <option value="year">1980</option>
-                    <option value="year"selected>1981</option>
+                    <option value="year">1981</option>
                     <option value="year">1982</option>
                     <option value="year">1983</option>
                     <option value="year">1984</option>
@@ -298,7 +298,7 @@ const NewQuotePage = () => {
                 <select className='ex-selection-gender'>
                     <option value="type"selected>Select</option>
                     <option value="type">Male</option>
-                    <option value="type"selected>Female</option>
+                    <option value="type">Female</option>
                     <option value="type">Other</option>
                 </select>
                 <br />
@@ -351,7 +351,7 @@ const NewQuotePage = () => {
                     <label htmlFor="date" className='ex-date-bottom'>Postal address:</label>
                     <Icon icon="bi:question-circle" color="white" width={25} />
                     <br />
-                    <input className='ex-input-2' type='text' placeholder='54 Something Street, Wellington'/>
+                    <input className='ex-input-2' type='text' placeholder='54 Something Street, Wellington' required/>
                 </div>
 
                 </form>
