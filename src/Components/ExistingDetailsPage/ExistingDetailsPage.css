@@ -229,10 +229,16 @@
 
 .down-arrow {
     text-align: center;
-    max-width: 1440px;
-    min-width: 1440px;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 300px;
+    margin-right: 119px;
+   
+}
+.container-arrowdown {
+
+    max-width: 1440px;
+    min-width: 1440px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -314,9 +320,18 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-left: auto;
+    margin-left: 25px;
     margin-right: auto;
     padding: 70px;
+
+}
+
+.existing-button-container {
+    width: 1440px;
+    min-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .existing-button-1, .existing-button-2, .existing-button-3 {
