@@ -29,7 +29,7 @@ const ChoosePolicy = () => {
                                                     <h3>Your quote number</h3>
                                                     <input type="text" name="name" placeholder='Enter your quote number' />
                                                     <p>I can't remember my quote number</p>
-                                                    <button className='my-Qoute-Button'>My quote</button>
+                                                    <button className='my-Qoute-Button'><NavLink className="NavLink" to='/existingdetailspage'>My quote</NavLink></button>
                                             </div>
                                              )
                             }
@@ -87,7 +87,7 @@ const ChoosePolicy = () => {
                         <tr>
                             <td></td>
                             <td className="best-policy7"><button className="get-quote"><NavLink className="NavLink" to='/newquote'>Get a quote</NavLink></button></td>
-                            <td ><button className="get-quote"><NavLink className="NavLink" to='/reviewquote'>Get a quote</NavLink></button></td>
+                            <td ><button className="get-quote">Get a quote</button></td>
                             <td ><button className="get-quote">Get a quote</button></td>
                         </tr>
 

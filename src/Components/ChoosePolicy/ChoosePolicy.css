@@ -40,7 +40,7 @@ header{
     background-color: #fff;
     border-radius: 16px;
     width: 290px;
-    padding: 13px;
+    padding: 15px;
     text-align: center;
     margin-top: 35px;
     font-size: 25px;
@@ -296,4 +296,12 @@ table{
 .third-party:hover::before,
 .third-party:hover::after{
     --scale:1;
+}
+
+.NavLink {
+    text-decoration: none;
+}
+
+.NavLink:visited {
+    color: #fff;
 }

@@ -80,7 +80,7 @@ function SimpleCarousel(props) {
                             <div className={classes.QouteButton}><NavLink className={classes.NavLink} to='/choosepolicy'><b>Get a quote</b></NavLink></div>
                             <div className={classes.ExistingQouteButton} onClick={(e) => setShowQoute(!showQoute)}><b>Existing quote?</b></div>
                             <div className={classes.DropDownQoute} ></div>
-                        <h3 className={classes.OurPolicies}>Compare our policie</h3>
+                        <h3 className={classes.OurPolicies}>Compare our policies</h3>
                     </div>
                 <div className={classes.RightArrow} onClick={nextClickHandler}>❱</div>
             </div>
@@ -98,7 +98,7 @@ function SimpleCarousel(props) {
                                     <h3>Your quote number</h3>
                                     <input type="text" name="name" placeholder='Enter your quote number' />
                                     <p>I can't remember my quote number</p>
-                                    <button className={classes.MyQouteButton}>My quote</button>
+                                    <button className={classes.MyQouteButton}><NavLink className="NavLink" to='/existingdetailspage'>My quote</NavLink></button>
                                 </div>
                             )
             }
