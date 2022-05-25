@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
 
+/*USE THIS COLOR FOR SELECTED CARD*/
+
 .review-page-container {
     width: 1600px;
     margin-left: auto;

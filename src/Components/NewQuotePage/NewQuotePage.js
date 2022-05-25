@@ -1,5 +1,5 @@
 import React from 'react';
-import './NewQuotePage.css';
+import '../NewQuotePage/NewQuotePage.css';
 import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
 import ProgressBar from '../../Images/progressbar1.png';
@@ -12,7 +12,7 @@ const NewQuotePage = () => {
         <NavBar/>
         <img src={ProgressBar} alt="progress bar" className='progress-bar'/>
         <div className='new-quote-page-container'>
-                <div className='existing-details-header'>New quote - Comprehensive</div>
+                <div className='new-details-header'>New quote - Comprehensive</div>
         </div>
         <div className="ex-quote-box">
             <div className="title-step-1">

@@ -6,7 +6,7 @@ import ChoosePolicy from './Components/ChoosePolicy/ChoosePolicy';
 import ReviewPage from './Components/ReviewPage/ReviewPage';
 import NewQuotePage from './Components/NewQuotePage/NewQuotePage';
 import ExistingDetailsPage from './Components/ExistingDetailsPage/ExistingDetailsPage';
-import BuyPolicy from './Components/BuyPolicyPage/BuyPolicy';
+import BuyPolicy from './Components/PaymentPage/Payment';
 import ConfirmationPage from './Components/ConfirmationPage/ConfirmationPage';
 
 

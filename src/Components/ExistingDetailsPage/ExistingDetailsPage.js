@@ -12,7 +12,7 @@ const ExistingDetailsPage = () => {
         <NavBar/>
         <img src={ProgressBar} alt="progress bar"  className='progress-bar'/>
         <div className='existing-details-page-container'>
-                <div className='existing-details-header'>Existing  quote - Comprehensive</div>
+                <div className='existing-quote-header'>Existing quote - Comprehensive</div>
         </div>
         <div className="ex-quote-box">
             <p className='ex-steps'>
