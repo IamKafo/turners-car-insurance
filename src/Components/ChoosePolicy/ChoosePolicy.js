@@ -87,7 +87,7 @@ const ChoosePolicy = () => {
                         <tr>
                             <td></td>
                             <td className="best-policy7"><button className="get-quote"><NavLink className="NavLink" to='/newquote'>Get a quote</NavLink></button></td>
-                            <td ><button className="get-quote"><NavLink className="NavLink" to='/reviewquote'>Get a quote</NavLink></button></td>
+                            <td ><button className="get-quote">Get a quote</button></td>
                             <td ><button className="get-quote">Get a quote</button></td>
                         </tr>
 
