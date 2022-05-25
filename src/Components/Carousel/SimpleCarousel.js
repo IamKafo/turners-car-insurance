@@ -97,7 +97,7 @@ function SimpleCarousel(props) {
                                     <h3>Your quote number</h3>
                                     <input type="text" name="name" placeholder='Enter your quote number' />
                                     <p>I can't remember my quote number</p>
-                                    <button className={classes.MyQouteButton}>My quote</button>
+                                    <button className={classes.MyQouteButton}><NavLink className="NavLink" to='/existingdetailspage'>My quote</NavLink></button>
                                 </div>
                             )
             }

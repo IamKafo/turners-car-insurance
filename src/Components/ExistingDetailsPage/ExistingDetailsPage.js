@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
 import ProgressBar from '../../Images/progressbar1.png';
 import { Icon } from '@iconify/react'
+import { NavLink } from 'react-router-dom';
 
 const ExistingDetailsPage = () => {
     return (
@@ -374,8 +375,8 @@ const ExistingDetailsPage = () => {
             </div>
         </div>
         <div className="existing-button">
-            <button className='existing-button-1'>Get a new quote</button>
-            <button className='existing-button-2'>Review & proceed</button>
+            <button className='existing-button-1'><NavLink className="NavLink" to='/newquote'>Get a new quote</NavLink></button>
+            <button className='existing-button-2'><NavLink className="NavLink" to='/reviewquote'>Review & proceed</NavLink></button>
         </div>
         <Footer/>
         </>

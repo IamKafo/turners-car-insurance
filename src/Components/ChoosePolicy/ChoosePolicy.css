@@ -297,3 +297,11 @@ table{
 .third-party:hover::after{
     --scale:1;
 }
+
+.NavLink {
+    text-decoration: none;
+}
+
+.NavLink:visited {
+    color: #fff;
+}
