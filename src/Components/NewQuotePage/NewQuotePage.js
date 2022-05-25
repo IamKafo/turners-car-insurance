@@ -1,5 +1,5 @@
 import React from 'react';
-import '../NewQuotePage/NewQuotePage.css';
+import './NewQuotePage.css';
 import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
 import ProgressBar from '../../Images/progressbar1.png';
@@ -12,16 +12,12 @@ const NewQuotePage = () => {
         <NavBar/>
         <img src={ProgressBar} alt="progress bar" className='progress-bar'/>
         <div className='new-quote-page-container'>
-                <div className='new-details-header'>New quote - Comprehensive</div>
+                <div className='existing-details-header'>New quote - Comprehensive</div>
         </div>
         <div className="ex-quote-box">
-            <div className="title-step-1">
-                <p className='ex-steps-1'>
+            <p className='ex-steps'>
                 STEP 1: <br/> Car details 
-                </p>
-
-            </div>
-            
+            </p>
             <div className="ex-card">
                 <p className='ex-card-title'>
                     Car details 
@@ -32,6 +28,7 @@ const NewQuotePage = () => {
                 <form action="">
                 <label htmlFor="date" className='ex-date'>Policy start date:</label>
                 <select className='ex-selection'>
+                    <option value=""selected>Day</option>
                     <option value="">1</option>
                     <option value="">2</option>
                     <option value="">3</option>
@@ -49,7 +46,7 @@ const NewQuotePage = () => {
                     <option value="">15</option>
                     <option value="">16</option>
                     <option value="">17</option>
-                    <option value="">18</option>
+                    <option value="" selected>18</option>
                     <option value="">19</option>
                     <option value="">20</option>
                     <option value="">21</option>
@@ -63,10 +60,9 @@ const NewQuotePage = () => {
                     <option value="">29</option>
                     <option value="">30</option>
                     <option value="">31</option>
-                    <option value="Day"selected>Day</option>
                 </select>
                 <select className='ex-selection'>
-                    <option value="January">Month</option>
+                    <option value="January" selected>Month</option>
                     <option value="January">January</option>
                     <option value="February">February</option>
                     <option value="March">March</option>
@@ -75,13 +71,13 @@ const NewQuotePage = () => {
                     <option value="June">June</option>
                     <option value="July">July</option>
                     <option value="August">August</option>
-                    <option value="September">September</option>
+                    <option value="September" selected>September</option>
                     <option value="October">October</option>
                     <option value=" November"> November</option>
                     <option value="December">December</option>
                 </select>
                 <select className='ex-selection'>
-                    <option value="year">Year</option>
+                    <option value="year" selected>Year</option>
                     <option value="year">2013</option>
                     <option value="year">2014</option>
                     <option value="year">2015</option>
@@ -99,8 +95,8 @@ const NewQuotePage = () => {
                 <Icon icon="bi:question-circle" color="white" width={25} />
                 <input className='ex-input' type='text' placeholder='ABC123'/>
                 <br />
-                <select className='ex-selection'>
-                    <option value="year">Year</option>
+                <select className='ex-selection-1'>
+                    <option value="year"selected>Year</option>
                     <option value="year">2013</option>
                     <option value="year">2014</option>
                     <option value="year">2015</option>
@@ -113,8 +109,8 @@ const NewQuotePage = () => {
                     <option value="year">2022</option>
                     <option value="year">2023</option>
                 </select>
-                <select className='ex-selection'>
-                    <option value="car">Make</option>
+                <select className='ex-selection-make'>
+                    <option value="car" selected>Make</option>
                     <option value="car">Audi</option>
                     <option value="car">Alfa Romeo</option>
                     <option value="car">Austin</option>
@@ -193,15 +189,16 @@ const NewQuotePage = () => {
                 
             </div>
         </div>
-        <div className='down-arrow'>
-            <Icon icon="ant-design:down-outlined" width={40} />
+        <div className="container-arrowdown">
+            <div className='down-arrow'>
+                <Icon icon="ant-design:down-outlined" width={40} />
+            </div>
         </div>
-
         <div className="ex-quote-box">
             <p className='ex-steps'>
                 STEP 2: <br/> Personal <br/>details 
             </p>
-            <div className="ex-card">
+            <div className="ex-card-2">
                 <p className='ex-card-title'>
                     Personal details 
                 </p>
@@ -223,7 +220,7 @@ const NewQuotePage = () => {
                 <form action="">
                 <label htmlFor="date" className='ex-date'>Date of birth:</label>
                 <select className='ex-selection'>
-                    <option value="">Day</option>
+                    <option value=""selected>Day</option>
                     <option value="">1</option>
                     <option value="">2</option>
                     <option value="">3</option>
@@ -236,7 +233,7 @@ const NewQuotePage = () => {
                     <option value="">10</option>
                     <option value="">11</option>
                     <option value="">12</option>
-                    <option value="">13</option>
+                    <option value=""selected>13</option>
                     <option value="">14</option>
                     <option value="">15</option>
                     <option value="">16</option>
@@ -257,7 +254,7 @@ const NewQuotePage = () => {
                     <option value="">31</option>
                 </select>
                 <select className='ex-selection'>
-                    <option value="Month">Month</option>
+                    <option value="January"selected>Month</option>
                     <option value="January">January</option>
                     <option value="February">February</option>
                     <option value="March">March</option>
@@ -265,16 +262,16 @@ const NewQuotePage = () => {
                     <option value="May">May</option>
                     <option value="June">June</option>
                     <option value="July">July</option>
-                    <option value="August">August</option>
+                    <option value="August"selected>August</option>
                     <option value="September">September</option>
                     <option value="October">October</option>
                     <option value=" November"> November</option>
                     <option value="December">December</option>
                 </select>
                 <select className='ex-selection'>
-                    <option value="year">Year</option>
+                    <option value="year"selected>Year</option>
                     <option value="year">1980</option>
-                    <option value="year">1981</option>
+                    <option value="year"selected>1981</option>
                     <option value="year">1982</option>
                     <option value="year">1983</option>
                     <option value="year">1984</option>
@@ -298,17 +295,17 @@ const NewQuotePage = () => {
                 </select>
                 <br />
                 <label htmlFor="date" className='ex-date'>Gender:</label>
-                <select className='ex-selection-2'>
-                    <option value="type">Select</option>
+                <select className='ex-selection-gender'>
+                    <option value="type"selected>Select</option>
                     <option value="type">Male</option>
-                    <option value="type">Female</option>
+                    <option value="type"selected>Female</option>
                     <option value="type">Other</option>
                 </select>
                 <br />
                 <label htmlFor="date" className='ex-date'>Licence:</label>
                 <Icon icon="bi:question-circle" color="white" width={25} />
-                <select className='ex-selection-1'>
-                    <option value="type">Select</option>
+                <select className='ex-selection-licence'>
+                    <option value="type"selected>Select</option>
                     <option value="type">NZ Full</option>
                     <option value="type">NZ Restricted</option>
                     <option value="type">NZ Learners</option>
@@ -316,7 +313,7 @@ const NewQuotePage = () => {
                 <br />
                 <label htmlFor="date" className='ex-date'>Age when licence was first issued:</label>
                 <select className='ex-selection-2'>
-                    <option value="">Select</option>
+                <option value=""selected>Select</option>
                     <option value="">1</option>
                     <option value="">2</option>
                     <option value="">3</option>
@@ -361,8 +358,10 @@ const NewQuotePage = () => {
                 
             </div>
         </div>
-        <div className='down-arrow'>
-            <Icon icon="ant-design:down-outlined" width={40} />
+        <div className="container-arrowdown">
+            <div className='down-arrow'>
+                <Icon icon="ant-design:down-outlined" width={40} />
+            </div>
         </div>
         <div className='step-3-container'>
             <div className="step-3-title">
@@ -370,10 +369,10 @@ const NewQuotePage = () => {
             </div>
             <div className="step-3-card">
                 <div className="inside-step-3-card">
-                    <Icon icon="ant-design:plus-outlined" color="white" width={77} />
+                    <Icon icon="ant-design:plus-outlined" color="white" width={70} />
                     <div className="inside-phrase-card-3">
                         <h1>Add other drivers</h1>
-                        <p><b>include details of additional drivers</b></p>
+                        <p><b>Include details of additional drivers</b></p>
                     </div>
                 </div>
             </div>
@@ -381,7 +380,7 @@ const NewQuotePage = () => {
         <div className='step-3-container-2'>
         <div className="step-3-card-2">
                 <div className="inside-step-3-card">
-                    <Icon icon="ant-design:plus-outlined" color="white" width={77} className='step-3-icon' />
+                    <Icon icon="ant-design:plus-outlined" color="white" width={70} className='step-3-icon' />
                     <div className="inside-phrase-card-3">
                         <h1>Save up to $120</h1>
                         <p><b>By adding another vehicle to this quote, you will receive a Multi-Policy Discount. </b></p>
@@ -389,10 +388,12 @@ const NewQuotePage = () => {
                 </div>
             </div>
         </div>
-        <div className="existing-button">
-            <button className='existing-button-1'><b><NavLink className="NavLink" to='/choosepolicy'>Go back</NavLink></b></button>
-            <button className='existing-button-3'><b>Save</b></button>
-            <button className='existing-button-2'><b><NavLink className="NavLink" to='/reviewquote'>Get my quote</NavLink></b></button>
+        <div className="existing-button-container">
+            <div className="existing-button">
+                <button className='existing-button-1'><b><NavLink className="NavLink" to='/choosepolicy'>Go back</NavLink></b></button>
+                <button className='existing-button-3'><b>Save</b></button>
+                <button className='existing-button-2'><b><NavLink className="NavLink" to='/reviewquote'>Get my quote</NavLink></b></button>
+            </div>
         </div>
         <Footer/>
         </>

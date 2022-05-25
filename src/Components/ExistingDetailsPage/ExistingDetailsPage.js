@@ -12,7 +12,7 @@ const ExistingDetailsPage = () => {
         <NavBar/>
         <img src={ProgressBar} alt="progress bar"  className='progress-bar'/>
         <div className='existing-details-page-container'>
-                <div className='existing-quote-header'>Existing quote - Comprehensive</div>
+                <div className='existing-details-header'>Existing  quote - Comprehensive</div>
         </div>
         <div className="ex-quote-box">
             <p className='ex-steps'>
@@ -92,7 +92,7 @@ const ExistingDetailsPage = () => {
                 <Icon icon="bi:question-circle" color="white" width={25} />
                 <input className='ex-input' type='text' placeholder='ABC123'/>
                 <br />
-                <select className='ex-selection'>
+                <select className='ex-selection-1'>
                     <option value="year">2013</option>
                     <option value="year">2014</option>
                     <option value="year">2015</option>
@@ -105,7 +105,7 @@ const ExistingDetailsPage = () => {
                     <option value="year">2022</option>
                     <option value="year">2023</option>
                 </select>
-                <select className='ex-selection'>
+                <select className='ex-selection-make'>
                     <option value="car">Audi</option>
                     <option value="car">Alfa Romeo</option>
                     <option value="car">Austin</option>
@@ -184,15 +184,16 @@ const ExistingDetailsPage = () => {
                 
             </div>
         </div>
-        <div className='down-arrow'>
-            <Icon icon="ant-design:down-outlined" width={40} />
+        <div className="container-arrowdown">
+            <div className='down-arrow'>
+                <Icon icon="ant-design:down-outlined" width={40} />
+            </div>
         </div>
-
         <div className="ex-quote-box">
             <p className='ex-steps'>
                 STEP 2: <br/> Personal <br/>details 
             </p>
-            <div className="ex-card">
+            <div className="ex-card-2">
                 <p className='ex-card-title'>
                     Personal details 
                 </p>
@@ -286,7 +287,7 @@ const ExistingDetailsPage = () => {
                 </select>
                 <br />
                 <label htmlFor="date" className='ex-date'>Gender:</label>
-                <select className='ex-selection-2'>
+                <select className='ex-selection-gender'>
                     <option value="type">Male</option>
                     <option value="type"selected>Female</option>
                     <option value="type">Other</option>
@@ -294,7 +295,7 @@ const ExistingDetailsPage = () => {
                 <br />
                 <label htmlFor="date" className='ex-date'>Licence:</label>
                 <Icon icon="bi:question-circle" color="white" width={25} />
-                <select className='ex-selection-1'>
+                <select className='ex-selection-licence'>
                     <option value="type">NZ Full</option>
                     <option value="type"selected>NZ Restricted</option>
                     <option value="type">NZ Learners</option>
@@ -346,8 +347,10 @@ const ExistingDetailsPage = () => {
                 
             </div>
         </div>
-        <div className='down-arrow'>
-            <Icon icon="ant-design:down-outlined" width={40} />
+        <div className="container-arrowdown">
+            <div className='down-arrow'>
+                <Icon icon="ant-design:down-outlined" width={40} />
+            </div>
         </div>
         <div className='step-3-container'>
             <div className="step-3-title">
@@ -355,7 +358,7 @@ const ExistingDetailsPage = () => {
             </div>
             <div className="step-3-card">
                 <div className="inside-step-3-card">
-                    <Icon icon="ant-design:plus-outlined" color="white" width={77} />
+                    <Icon icon="ant-design:plus-outlined" color="white" width={70} />
                     <div className="inside-phrase-card-3">
                         <h1>Add other drivers</h1>
                         <p><b>Include details of additional drivers</b></p>
@@ -366,7 +369,7 @@ const ExistingDetailsPage = () => {
         <div className='step-3-container-2'>
         <div className="step-3-card-2">
                 <div className="inside-step-3-card">
-                    <Icon icon="ant-design:plus-outlined" color="white" width={77} className='step-3-icon' />
+                    <Icon icon="ant-design:plus-outlined" color="white" width={70} className='step-3-icon' />
                     <div className="inside-phrase-card-3">
                         <h1>Save up to $120</h1>
                         <p><b>By adding another vehicle to this quote, you will receive a Multi-Policy Discount. </b></p>
@@ -374,9 +377,11 @@ const ExistingDetailsPage = () => {
                 </div>
             </div>
         </div>
-        <div className="existing-button">
-            <button className='existing-button-1'><NavLink className="NavLink" to='/newquote'>Get a new quote</NavLink></button>
-            <button className='existing-button-2'><NavLink className="NavLink" to='/reviewquote'>Review & proceed</NavLink></button>
+        <div className="existing-button-container">
+            <div className="existing-button">
+                <button className='existing-button-1'><NavLink className="NavLink" to='/newquote'>Get a new quote</NavLink></button>
+                <button className='existing-button-2'><NavLink className="NavLink" to='/reviewquote'>Review & proceed</NavLink></button>
+            </div>
         </div>
         <Footer/>
         </>
