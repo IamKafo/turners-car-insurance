@@ -12,11 +12,11 @@ const ExistingDetailsPage = () => {
         <NavBar/>
         <img src={ProgressBar} alt="progress bar"  className='progress-bar'/>
         <div className='existing-details-page-container'>
-                <div className='existing-details-header'>Existing quote - Comprehensive</div>
+                <div className='existing-details-header'>Existing  quote - Comprehensive</div>
         </div>
         <div className="ex-quote-box">
             <p className='ex-steps'>
-                STEP 1 <br/> Car details 
+                STEP 1: <br/> Car details 
             </p>
             <div className="ex-card">
                 <p className='ex-card-title'>
@@ -190,7 +190,7 @@ const ExistingDetailsPage = () => {
 
         <div className="ex-quote-box">
             <p className='ex-steps'>
-                STEP 2 <br/> Personal <br/>details 
+                STEP 2: <br/> Personal <br/>details 
             </p>
             <div className="ex-card">
                 <p className='ex-card-title'>
@@ -351,7 +351,7 @@ const ExistingDetailsPage = () => {
         </div>
         <div className='step-3-container'>
             <div className="step-3-title">
-                STEP 3 <br />Add other <br /> drivers
+                STEP 3: <br />Add other <br /> drivers
             </div>
             <div className="step-3-card">
                 <div className="inside-step-3-card">
