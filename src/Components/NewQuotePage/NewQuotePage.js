@@ -1,5 +1,5 @@
 import React from 'react';
-import '../NewQuotePage/NewQuotePage.css';
+import './NewQuotePage.css';
 import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
 import ProgressBar from '../../Images/progressbar1.png';
@@ -17,7 +17,7 @@ const NewQuotePage = () => {
         <div className="ex-quote-box">
             <div className="title-step-1">
                 <p className='ex-steps-1'>
-                STEP 1 <br/> Car details 
+                STEP 1: <br/> Car details 
                 </p>
 
             </div>
@@ -199,7 +199,7 @@ const NewQuotePage = () => {
 
         <div className="ex-quote-box">
             <p className='ex-steps'>
-                STEP 2 <br/> Personal <br/>details 
+                STEP 2: <br/> Personal <br/>details 
             </p>
             <div className="ex-card">
                 <p className='ex-card-title'>
@@ -366,7 +366,7 @@ const NewQuotePage = () => {
         </div>
         <div className='step-3-container'>
             <div className="step-3-title">
-                STEP 3 <br />Add other <br /> drivers
+                STEP 3: <br />Add other <br /> drivers
             </div>
             <div className="step-3-card">
                 <div className="inside-step-3-card">
