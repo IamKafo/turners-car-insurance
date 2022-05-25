@@ -229,7 +229,7 @@
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 94px;
+    margin-left: 285px;
     margin-right: 119px;
    
 }
@@ -357,7 +357,8 @@
     width: 287px;
     padding: 7px;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 25px;
     cursor: pointer;
     box-shadow: 1px 3px 2px 0px #a9a9a9;
