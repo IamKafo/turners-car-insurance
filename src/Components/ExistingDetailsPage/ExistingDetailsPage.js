@@ -358,7 +358,7 @@ const ExistingDetailsPage = () => {
                     <Icon icon="ant-design:plus-outlined" color="white" width={77} />
                     <div className="inside-phrase-card-3">
                         <h1>Add other drivers</h1>
-                        <p><b>include details of additional drivers</b></p>
+                        <p><b>Include details of additional drivers</b></p>
                     </div>
                 </div>
             </div>

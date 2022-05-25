@@ -2,7 +2,7 @@ import React from 'react';
 import './ReviewPage.css';
 import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
-import ProgressBar from './progressbar2.png';
+import ProgressBar from '../../Images/progressbar2.png';
 import { NavLink } from 'react-router-dom';
 
 const ReviewPage = () => {
@@ -45,7 +45,7 @@ const ReviewPage = () => {
                             <div className='plan-price'><span className="price-number">$700.40 </span> Annually</div>
                             <hr></hr>
                             <div className='card-content'>Includes <span className='color-price'>$60</span> online discount<br/>Save $25 if you insure another vehicle</div>
-                            <div className='disclaimer'>*You save $45 per year if you<br/>choose to pay anually</div>
+                            <div className='disclaimer'>*You save $45 per year if you<br/>choose to pay annually</div>
                             <button className='selected-button'>Select</button>
 
                         </div>
