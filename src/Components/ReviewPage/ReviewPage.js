@@ -235,12 +235,10 @@ const ReviewPage = () => {
             <div className="review-button-container">
                 <div className="need-to-think-about-it"> Need time to think about it?</div>
             <div className="review-button">
-                <button className='go-back-to-edit-btn'><b><NavLink className="NavLink" to='/'>Go back edit details</NavLink></b></button>
-                <button onClick={handleClick} className='email-my-quote'><b>Email my quote</b>
+                <button className='go-back-to-edit-btn'><b><NavLink className="NavLink" to='/existingdetailspage'>Go back edit details</NavLink></b></button>
+                <button className={handleClick}'email-my-quote'><b>Email my quote</b></button>
+                <button className='go-to-payment'><b><NavLink className="NavLink" to='/buypolicy'>Go to payment</NavLink></b></button>
 
-                </button>
-                <button className='go-to-payment'><b><NavLink className="NavLink" to='/'>Go to payment</NavLink></b></button>
-                
             </div>
         </div>
         <Footer/>

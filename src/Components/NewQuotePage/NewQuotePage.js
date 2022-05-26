@@ -12,7 +12,7 @@ const NewQuotePage = () => {
         <NavBar/>
         <img src={ProgressBar} alt="progress bar" className='progress-bar'/>
         <div className='new-quote-page-container'>
-                <div className='existing-details-header'>New quote - Comprehensive</div>
+                <div className='new-details-header'>New quote - Comprehensive</div>
         </div>
         <div className="ex-quote-box">
             <p className='ex-steps'>
@@ -46,7 +46,7 @@ const NewQuotePage = () => {
                     <option value="">15</option>
                     <option value="">16</option>
                     <option value="">17</option>
-                    <option value="" selected>18</option>
+                    <option value="">18</option>
                     <option value="">19</option>
                     <option value="">20</option>
                     <option value="">21</option>
@@ -71,7 +71,7 @@ const NewQuotePage = () => {
                     <option value="June">June</option>
                     <option value="July">July</option>
                     <option value="August">August</option>
-                    <option value="September" selected>September</option>
+                    <option value="September">September</option>
                     <option value="October">October</option>
                     <option value=" November"> November</option>
                     <option value="December">December</option>
@@ -91,9 +91,9 @@ const NewQuotePage = () => {
                     <option value="year">2023</option>
                 </select>
                 <br />
-                <label htmlFor="date" className='ex-date'>Car registration number:</label>
+                <label htmlFor="date" className='ex-date-bubble'>Car registration number:</label>
                 <Icon icon="bi:question-circle" color="white" width={25} />
-                <input className='ex-input' type='text' placeholder='ABC123'/>
+                <input className='ex-input' type='text' placeholder='ABC123' required/>
                 <br />
                 <select className='ex-selection-1'>
                     <option value="year"selected>Year</option>
@@ -169,20 +169,20 @@ const NewQuotePage = () => {
                     <option value="car">Volvo</option>
                     <option value="car">Zeta</option>
                 </select>
-                <input className='ex-input-3' type='text' placeholder='Model'/>
+                <input className='ex-input-3' type='text' placeholder='Model' required/>
                 <br />
                 <div className='ex-bottom'>
                     <label htmlFor="date" className='ex-date-bottom'>Address parked at overnight:</label>
                     <Icon icon="bi:question-circle" color="white" width={25} />
                     <br />
-                    <input className='ex-input-2' type='text' placeholder='54 Something Street, Wellington'/>
+                    <input className='ex-input-2' type='text' placeholder='54 Something Street, Wellington' required/>
                 </div>
                 <div className='ex-date-bottom-container'>
                 <label htmlFor="date" className='ex-date-bottom'>Any modifications to your vechicle:</label>
                     <Icon icon="bi:question-circle" color="white" width={25} />
                     <input type="radio" name='answer' className='bottom-answer' />
                     <label htmlFor="" className='bottom-answer-yes'>Yes</label>
-                    <input type="radio" name='answer' className='bottom-answer-2'/>
+                    <input type="radio" name='answer' className='bottom-answer-2' checked/>
                     <label htmlFor="" className='bottom-answer-yes'>No</label>
                 </div>
                 </form>
@@ -191,7 +191,7 @@ const NewQuotePage = () => {
         </div>
         <div className="container-arrowdown">
             <div className='down-arrow'>
-                <Icon icon="ant-design:down-outlined" width={40} />
+                <Icon icon="ant-design:down-outlined" width={60} />
             </div>
         </div>
         <div className="ex-quote-box">
@@ -202,20 +202,20 @@ const NewQuotePage = () => {
                 <p className='ex-card-title'>
                     Personal details 
                 </p>
-                <p className='ex-card-please'>
+                <p className='bottom-card-subtitle'>
                     Please enter the following details for the vehicle owner/main driver:
                 </p> 
                 <div className='ex-date-bottom-containe-2'>
-                <label htmlFor="date" className='ex-date-bottom'>Do you have other car insurance with Turner?</label>
+                <label htmlFor="date" className='ex-date-bottom'>Do you have other car insurance with Turners?</label>
                     <input type="radio" name='answer' className='bottom-answer' />
                     <label htmlFor="" className='bottom-answer-yes'>Yes</label>
-                    <input type="radio" name='answer' className='bottom-answer-2'/>
+                    <input type="radio" name='answer' className='bottom-answer-2' checked/>
                     <label htmlFor="" className='bottom-answer-yes'>No</label>
                 </div>
                 <div className='ex-bottom-1'>
                     <label htmlFor="date" className='ex-date-bottom'>Full name:</label>
                     <br />
-                    <input className='ex-input-2' type='text' placeholder='Fred Daggs'/>
+                    <input className='ex-input-22' type='text' placeholder='Fred Daggs' required/>
                 </div>
                 <form action="">
                 <label htmlFor="date" className='ex-date'>Date of birth:</label>
@@ -233,7 +233,7 @@ const NewQuotePage = () => {
                     <option value="">10</option>
                     <option value="">11</option>
                     <option value="">12</option>
-                    <option value=""selected>13</option>
+                    <option value="">13</option>
                     <option value="">14</option>
                     <option value="">15</option>
                     <option value="">16</option>
@@ -262,7 +262,7 @@ const NewQuotePage = () => {
                     <option value="May">May</option>
                     <option value="June">June</option>
                     <option value="July">July</option>
-                    <option value="August"selected>August</option>
+                    <option value="August">August</option>
                     <option value="September">September</option>
                     <option value="October">October</option>
                     <option value=" November"> November</option>
@@ -271,7 +271,7 @@ const NewQuotePage = () => {
                 <select className='ex-selection'>
                     <option value="year"selected>Year</option>
                     <option value="year">1980</option>
-                    <option value="year"selected>1981</option>
+                    <option value="year">1981</option>
                     <option value="year">1982</option>
                     <option value="year">1983</option>
                     <option value="year">1984</option>
@@ -298,7 +298,7 @@ const NewQuotePage = () => {
                 <select className='ex-selection-gender'>
                     <option value="type"selected>Select</option>
                     <option value="type">Male</option>
-                    <option value="type"selected>Female</option>
+                    <option value="type">Female</option>
                     <option value="type">Other</option>
                 </select>
                 <br />
@@ -351,7 +351,7 @@ const NewQuotePage = () => {
                     <label htmlFor="date" className='ex-date-bottom'>Postal address:</label>
                     <Icon icon="bi:question-circle" color="white" width={25} />
                     <br />
-                    <input className='ex-input-2' type='text' placeholder='54 Something Street, Wellington'/>
+                    <input className='ex-input-2' type='text' placeholder='54 Something Street, Wellington' required/>
                 </div>
 
                 </form>
@@ -360,7 +360,7 @@ const NewQuotePage = () => {
         </div>
         <div className="container-arrowdown">
             <div className='down-arrow'>
-                <Icon icon="ant-design:down-outlined" width={40} />
+                <Icon icon="ant-design:down-outlined" width={60} />
             </div>
         </div>
         <div className='step-3-container'>
@@ -391,7 +391,7 @@ const NewQuotePage = () => {
         <div className="existing-button-container">
             <div className="existing-button">
                 <button className='existing-button-1'><b><NavLink className="NavLink" to='/choosepolicy'>Go back</NavLink></b></button>
-                <button className='existing-button-3'><b>Save</b></button>
+                <button className='save-button'><b>Save</b></button>
                 <button className='existing-button-2'><b><NavLink className="NavLink" to='/reviewquote'>Get my quote</NavLink></b></button>
             </div>
         </div>

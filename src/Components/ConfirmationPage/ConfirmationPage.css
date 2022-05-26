@@ -20,16 +20,87 @@
 
 }
 
-.existing-details-header {
+.large-check-mark {
     margin-left: auto;
     margin-right: auto;
-    /* WIDTH SET TO SIZE OF TEXT, KEEP GUESSING AND CHECKING, USE LARGEST NUMBER WHILE STILL STAYING ON 1 LINE*/
-    width: 571px;
+    text-align: center;
+    font-size: 75px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-bottom: -40px;
+
+}
+.congratuations-header {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     font-size: 45px;
     font-family: 'Lato', sans-serif;
     text-shadow: 0px 1.25px, 1.25px 0px, 1.25px 1.25px;
-    font-weight: bold;
-    margin-bottom: 40px;
+    font-weight: bolder;
+}
 
+.congratulations-details {
+    font-size: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.congratulations-options {
+    font-size: 20px;
+    padding: 30px 20px 30px 70px;
+    width: 350px;
+    background-color: #0076BE;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+    border-radius: 16px;
+    line-height: 35px;
+}
+.congratulations-options:hover{
+    cursor: pointer;
+}
+
+.pdf-icon {
+    font-size: 25.5px;
+}
+
+.homepage-refer{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+
+.back-home-button {
+    border-radius: 16px;
+    background-color: black;
+    color: #fff;
+    height: 60px;
+    width: 287px;
+    padding: 7px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 1px 3px 2px 0px #a9a9a9;
+    font-weight: bold;
+}
+
+.refer-text {
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    margin-left: 200px;
+    margin-top: 15px;
+    border-bottom: 2px solid;
+}
+
+.refer-text:hover{
+    cursor: pointer;
 }

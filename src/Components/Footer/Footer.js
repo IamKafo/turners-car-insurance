@@ -4,6 +4,7 @@ import Logo from "./turnerslogofooter.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return(
@@ -11,17 +12,17 @@ const Footer = () => {
         <div className="footer">
             <div className="row">
                 <div className="col">
-                    <img src={Logo} alt="logo" className="logo"/>
+                    <NavLink className="NavLink" to='/'><img src={Logo} alt="logo" className="logo"/> </NavLink>
                     <p>Copyright © 2022 Turners </p>
                     <p className="p2">All rights reserved</p>
                     <div className="socialmedia">
-                        <i className="sociallogo"><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></i>
+                        <a href="https://www.facebook.com/turnersNZ/"><i className="sociallogo"><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></i></a>
                         <i></i>
-                        <i className="sociallogo"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></i>
+                        <a href="https://www.instagram.com/turners_cars/?hl=en"><i className="sociallogo"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></i></a>
                         <i></i>
-                        <i className="sociallogo"><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon></i>
+                        <a href="https://twitter.com/turnersgroupnz?lang=en"><i className="sociallogo"><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon></i></a>
                         <i></i>
-                        <i className="sociallogo"><FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon></i>
+                        <a href="https://www.youtube.com/channel/UCxZlmC2fmgJQjfXpTAy-sIQ"><i className="sociallogo"><FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon></i></a>
                     </div>
                 </div>
                 <div className="col">

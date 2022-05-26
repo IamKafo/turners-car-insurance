@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
 
+/*USE THIS COLOR FOR SELECTED CARD*/
+
 .review-page-container {
     width: 1600px;
     margin-left: auto;
@@ -134,8 +136,8 @@
     height: 500px;
     margin: auto;
     background-color: white;
-    box-shadow: 0px 0px 15px -5px;
-    border: 1px;
+    box-shadow: 0px 0px 25px -5px;
+    border: 1px black;
     border-radius: 10px;
     text-align: center;
 }
@@ -215,6 +217,7 @@ hr {
     cursor: pointer;
     box-shadow: 1px 3px 2px 0px #a9a9a9;
     font-weight: bold;
+    border:  2px solid black ;
 }
 
 .review-card-container{
@@ -347,8 +350,27 @@ hr {
     justify-content: center;
 }
 
-.go-back-to-edit-btn, .email-my-quote, .go-to-payment {
-    border-radius: 10px;
+.email-my-quote, .go-to-payment {
+    border-radius: 16px;
+    background-color: black;
+    height: 60px;
+    width: 287px;
+    padding: 7px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 1px 3px 2px 0px #a9a9a9;
+    font-weight: bold;
+
+}
+
+.email-my-quote {
+    background-color: #fff;
+    border:  2px solid black ;
+}
+
+.go-back-to-edit-btn {
+    border-radius: 16px;
     background-color: black;
     color: #fff;
     height: 60px;
@@ -360,18 +382,13 @@ hr {
     box-shadow: 1px 3px 2px 0px #a9a9a9;
     font-weight: bold;
     color: black;
-
+    background-color: #e4e4e4;
+    border:  2px solid black;
 }
-
-.email-my-quote {
-    background-color: #fff;
-}
-
-
-
 .go-to-payment{
     color: #fff;
     background-color: black;
+    border:  2px solid black ;
 }
 
 .review-button {
@@ -391,7 +408,8 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
-.go-back-to-edit-btn {
+
+.go-back-to-edit-btn .NavLink:visited{
     color: black;   
 }
 .need-to-think-about-it{
