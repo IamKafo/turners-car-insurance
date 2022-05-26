@@ -136,7 +136,7 @@
     height: 500px;
     margin: auto;
     background-color: white;
-    box-shadow: 0px 0px 15px -5px;
+    box-shadow: 0px 0px 25px -5px;
     border: 1px;
     border-radius: 10px;
     text-align: center;
@@ -350,9 +350,8 @@ hr {
 }
 
 .go-back-to-edit-btn, .email-my-quote, .go-to-payment {
-    border-radius: 10px;
+    border-radius: 16px;
     background-color: black;
-    color: #fff;
     height: 60px;
     width: 287px;
     padding: 7px;
@@ -367,10 +366,25 @@ hr {
 
 .email-my-quote {
     background-color: #fff;
+    border:  2px solid black ;
 }
 
-
-
+.go-back-to-edit-btn {
+    border-radius: 16px;
+    background-color: black;
+    color: #fff;
+    height: 60px;
+    width: 287px;
+    padding: 7px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 1px 3px 2px 0px #a9a9a9;
+    font-weight: bold;
+    color: black;
+    background-color: #e4e4e4;
+    border:  2px solid black ;
+}
 .go-to-payment{
     color: #fff;
     background-color: black;
@@ -392,7 +406,4 @@ hr {
     min-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-}
-.go-back-to-edit-btn {
-    color: black;   
 }
