@@ -1,11 +1,46 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './ReviewPage.css';
 import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
 import ProgressBar from '../../Images/progressbar2.png';
 import { NavLink } from 'react-router-dom';
 
+// import { makeStyles } from '@material-ui/core/styles';
+import Slider from '@mui/material/Slider';
+import Box from '@mui/material/Box';
+
+function valueLabelFormat(value) {
+    const units = [''] ;
+
+    let unitIndex = 0;
+    let scaledValue = value
+
+    while (scaledValue >= 600 && unitIndex < units.length -1) {
+        unitIndex += 1;
+        scaledValue =700;
+    }
+
+    return `${scaledValue} ${units[unitIndex]}`;
+
+}
+function calculateValue (value){
+    return   value
+}
+  
+
 const ReviewPage = () => {
+
+    const [value, setValue] = useState(62.68)
+
+    const handleChange = (e,newValue) => {
+        if (typeof newValue === 'number') {
+            setValue(newValue)
+        }
+    };
+
+  
+
+
     return (
         <>
         <NavBar/>
@@ -78,11 +113,127 @@ const ReviewPage = () => {
                 </div>
                 <div className='policy-wording'>View policy wording</div>
                 <div className='review-details'>Review your details</div>
-                <div> DETAILS PLACEHOLDER</div>
-
-                <button><NavLink className="NavLink" to='/buypolicy'>Payment page routing placeholder</NavLink></button>
+                {/* <div> DETAILS PLACEHOLDER</div> */}
+{/* 
+                <button><NavLink className="NavLink" to='/buypolicy'>Payment page routing placeholder</NavLink></button> */}
 
             </div>
+
+            <div className="review-card-container">
+                <div className="review-cards-detail">
+                    <h1>
+                        About the car:
+                    </h1>
+                    <div className="details-1">
+                        <h3>Car registration number:</h3>
+                        <h4 className='right-side-answers'>ABC123</h4>
+                    </div>
+                    <div className="details-1">
+                        <h3>Year, make, model:</h3>
+                        <h4 className='right-side-answers'>2012 Toyota Blade</h4>
+                    </div>
+                    <div className="details-1">
+                        <h3>Address parked overnight:</h3>
+                        <h4 className='right-side-answers'>54 Something Street, Aro Valley, Wellington</h4>
+                    </div>
+                    <div className="details-1">
+                        <h3>Vehicle modifications:</h3>
+                        <h4 className='right-side-answers'>No</h4>
+                    </div>
+                </div>
+                <div className="review-cards-detail-2">
+                    <h1>
+                    About you:
+                    </h1>
+                    <div className="details-1">
+                        <h3>Policies with Turners: </h3>
+                        <h4>No</h4>
+                    </div>
+                    <div className="details-1">
+                            <h3>Name:</h3>
+                            <h4>Fred Daggs</h4>
+                    </div>
+                    <div className="details-1">
+                            <h3>Date of birth: </h3>
+                            <h4>13 August 1981</h4>
+                    </div>
+                    <div className="details-1">
+                            <h3>Gender:</h3>
+                            <h4>Male</h4>
+                    </div>
+                    <div className="details-1">
+                            <h3>Licence held:</h3>
+                            <h4>NZ Full</h4>
+                    </div>
+                    <div className="details-1">
+                            <h3>Years of driving experience:</h3>
+                            <h4>23</h4>
+                    </div>
+                    <div className="details-1">
+                            <h3>Postal address:</h3>
+                            <h4>54 Something Street, Aro Valley, Wellington 6011</h4>
+                    </div>
+                </div>
+                <div className="excess-container">
+                    <div className="excess-header">
+                        <h1>
+                            Excess:
+                        </h1>
+                        <h3>Click and drag the red tab to change your excess - see how it affects your monthly premium</h3>
+                    </div>
+                    <div className="slider-container">
+                    <div className='slider'>
+                        <Box width={700}>
+                        <Slider
+                        sx={{
+                            color:'#B71234',
+                            '& .MuiSlider-thumb ': {
+                                borderRadius: '24px',
+                                width: '30px',
+                                height: '92px',
+                            },
+                            '& .MuiSlider-rail ': {
+                                height: '22px',
+                                color: '#fff'
+                            },
+                            '& .MuiSlider-track ': {
+                                height: '22px'
+                            }
+                        }}
+                        min={28}
+                        step={1}
+                        max={700.4}
+                        value={value}
+                        scale={calculateValue}
+                         defaultValue={62.68} 
+                         aria-label="" 
+                         onChange={handleChange}
+                         valueLabelDisplay="on"
+                         color='secondary' 
+                         size='small' 
+
+                         />
+                         </Box>
+                    
+                    </div>
+                    <div className="current-monthly">
+                        <h3>Currently monthly premium:</h3>
+                    </div>
+                    <div className="currently-ouput">$
+                            {
+                                valueLabelFormat(calculateValue(value))
+                            }
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div className="review-button-container">
+            <div className="review-button">
+                <button className='go-back-to-edit-btn'><b><NavLink className="NavLink" to='/'>Go back edit details</NavLink></b></button>
+                <button className='email-my-quote'><b>Email my quote</b></button>
+                <button className='go-to-payment'><b><NavLink className="NavLink" to='/'>Go to payment</NavLink></b></button>
+            </div>
+        </div>
         <Footer/>
         </>
     )
