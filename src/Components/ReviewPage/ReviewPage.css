@@ -349,7 +349,7 @@ hr {
     justify-content: center;
 }
 
-.go-back-to-edit-btn, .email-my-quote, .go-to-payment {
+.email-my-quote, .go-to-payment {
     border-radius: 16px;
     background-color: black;
     height: 60px;
@@ -360,7 +360,6 @@ hr {
     cursor: pointer;
     box-shadow: 1px 3px 2px 0px #a9a9a9;
     font-weight: bold;
-    color: black;
 
 }
 
@@ -372,7 +371,6 @@ hr {
 .go-back-to-edit-btn {
     border-radius: 16px;
     background-color: black;
-    color: #fff;
     height: 60px;
     width: 287px;
     padding: 7px;
