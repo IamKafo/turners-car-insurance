@@ -399,7 +399,7 @@ hr {
     justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
-    padding: 70px;
+    padding: 7px;
 }
 
 .review-button-container {
@@ -410,5 +410,14 @@ hr {
 }
 
 .go-back-to-edit-btn .NavLink:visited{
-    color: black;
+    color: black;   
+}
+.need-to-think-about-it{
+    text-align: center;
+    width: 1600px;
+    min-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    margin-top: 20px;
 }
