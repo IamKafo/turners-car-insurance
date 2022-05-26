@@ -412,6 +412,10 @@ hr {
 .go-back-to-edit-btn .NavLink:visited{
     color: black;   
 }
+
+.NavLink:visited {
+    display: none;
+}
 .need-to-think-about-it{
     text-align: center;
     width: 1600px;
