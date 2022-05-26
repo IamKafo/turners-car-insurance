@@ -4,6 +4,7 @@ import Logo from "./turnerslogofooter.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return(
@@ -11,7 +12,7 @@ const Footer = () => {
         <div className="footer">
             <div className="row">
                 <div className="col">
-                    <img src={Logo} alt="logo" className="logo"/>
+                    <NavLink className="NavLink" to='/'><img src={Logo} alt="logo" className="logo"/> </NavLink>
                     <p>Copyright © 2022 Turners </p>
                     <p className="p2">All rights reserved</p>
                     <div className="socialmedia">

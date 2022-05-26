@@ -380,7 +380,7 @@
 
 
 .existing-button-1, .existing-button-2, .existing-button-3 {
-    border-radius: 10px;
+    border-radius: 16px;
     background-color: black;
     color: #fff;
     height: 60px;
@@ -399,7 +399,7 @@
 
 .existing-button-2 {
     border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
+    border-radius: 16px;
     height: 60px;
     width: 287px;
     padding: 7px;
