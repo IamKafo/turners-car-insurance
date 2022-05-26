@@ -17,7 +17,7 @@ const ConfirmationPage = () => {
         <header className="congratuations-header">Congratuations!</header>
         <div className="congratulations-details">
             Your vehicle is now insured. Your <b>Comprehensive car policy</b> is effective from <b>18-09-2022.</b> <br/>
-            Your first <b>monthly</b> payment will begin on <b>01-06-2022.</b></div>
+            Your first <b>monthly</b> payment will begin on <b>18-10-2022.</b></div>
         <div className="congratulations-options">
         <FontAwesomeIcon icon={faEye}></FontAwesomeIcon> <u>View my policy</u><br/>
         <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> <u>Email/text my policy documents</u><br/>
