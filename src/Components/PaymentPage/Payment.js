@@ -25,7 +25,7 @@ const BuyPolicy = () => {
 
                         </div>
                         <div className="policy-selection">
-                            You Have selected <b>the fortnightly plan</b> <br/>
+                            You Have selected <b>the monthly plan</b> <br/>
                             for <b>Comprehensive Car insurance</b>
 
                             <ul className="policy-description-list">
