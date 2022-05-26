@@ -9,6 +9,7 @@ import NewQuotePage from './Components/NewQuotePage/NewQuotePage';
 import ExistingDetailsPage from './Components/ExistingDetailsPage/ExistingDetailsPage';
 import BuyPolicy from './Components/PaymentPage/Payment';
 import ConfirmationPage from './Components/ConfirmationPage/ConfirmationPage';
+import ScrollToTop from './Components/ScrollToTop';
 
 
 
@@ -17,6 +18,7 @@ function App() {
   return (
       <>
         <Router>
+          <ScrollToTop/>
           <Routes>
             <Route exact path="/"  element={<HomePage />} />
             <Route path="/existingdetailspage" element={<ExistingDetailsPage/>} />
