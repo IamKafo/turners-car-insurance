@@ -39,11 +39,60 @@ const BuyPolicy = () => {
                                 <li>Theft of your vehicle</li>
                             </ul>
                         </div>
-
                     </div>
+                <div className="disclosure-container">
+                    <div className="disclosure-details">
+                        <div className="disclosure-header">Disclosure</div>
+                        <div className="disclosure-disclaimer">*Please give an honest answer for each of the question below:</div>
+
+                        <div className="question">
+                        <div className="question-text">In the last 5 years, have you had any accidents or losses where a car was damaged or stolen (whether you were at fault or not)?</div>
+                        <div className="radio-buttons-container">
+                                <input type="radio" name='answer' className="disclosure-button-yes"/>
+                                <label htmlFor="" className="yes-text">Yes</label><br></br>
+                                <input type="radio" name='answer' className="disclosure-button-no" checked/>
+                                <label htmlFor="" className="no-text">No</label><br></br>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div className="question">
+                        <div className="question-text">In the last 7 years have you been convicted of a criminal offence relating to fraud, theft or burglary, arson or criminal or wilful damage?</div>   
+                        <div className="radio-buttons-container">
+                                <input type="radio" name='answer2' className="disclosure-button-yes"/>
+                                <label htmlFor="" className="yes-text">Yes</label><br></br>
+                                <input type="radio" name='answer2' className="disclosure-button-no" checked/>
+                                <label htmlFor="" className="no-text">No</label><br></br>             
+                            </div>  
+                        </div>
+                        <hr/>
+                        <div className="question">
+                        <div className="question-text">In the last 5 years, have you had any insurance refused, cancelled, renewal not offered, claim refused or any special conditions imposed?</div>
+                        <div className="radio-buttons-container">
+                                <input type="radio" name='answer3' className="disclosure-button-yes"/>
+                                <label for="yes" className="yes-text">Yes</label><br></br>
+                                <input type="radio" name='answer3' className="disclosure-button-no" checked/>
+                                <label for="no" className="no-text">No</label><br></br>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div className="last-question">
+                        <div className="question-text">Have you had your license revoked, cancelled or suspended in the last 3 years?</div>
+                            <div className="radio-buttons-container">
+                                <input type="radio" name='answer4' className="disclosure-button-yes"/>
+                                <label htmlFor="" className="yes-text">Yes</label><br></br>
+                                <input type="radio" name='answer4' className="disclosure-button-no" checked/>
+                                <label htmlFor="" className="no-text">No</label><br></br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="payment-button-container">
+                    <div className="payment-button">
+                        <button className='go-back-to-edit-button'><b><NavLink className="NavLink" to='/existingdetailspage'>Go back edit details</NavLink></b></button>
+                        <button className='buy-insurance-button'><b><NavLink className="NavLink" to='/confirm'>Buy insurance</NavLink></b></button>
+                    </div>
+                </div>
         </div>
-        
-        <button><NavLink className="NavLink" to='/confirm'> confirm page routing placeholder</NavLink></button>
         <Footer/>
         </>
     )

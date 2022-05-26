@@ -379,7 +379,7 @@
 }
 
 
-.existing-button-1, .existing-button-2, .existing-button-3 {
+.existing-button-1, .existing-button-2 {
     border-radius: 16px;
     background-color: black;
     color: #fff;
@@ -393,7 +393,7 @@
     font-weight: bold;
     color: black;
     background-color: #e4e4e4;
-    border:  2px solid black ;
+    border:  2px solid black;
     
 }
 

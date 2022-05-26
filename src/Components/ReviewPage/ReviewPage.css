@@ -137,7 +137,7 @@
     margin: auto;
     background-color: white;
     box-shadow: 0px 0px 25px -5px;
-    border: 1px;
+    border: 1px black;
     border-radius: 10px;
     text-align: center;
 }
@@ -217,6 +217,7 @@ hr {
     cursor: pointer;
     box-shadow: 1px 3px 2px 0px #a9a9a9;
     font-weight: bold;
+    border:  2px solid black ;
 }
 
 .review-card-container{
@@ -371,6 +372,7 @@ hr {
 .go-back-to-edit-btn {
     border-radius: 16px;
     background-color: black;
+    color: #fff;
     height: 60px;
     width: 287px;
     padding: 7px;
@@ -381,11 +383,12 @@ hr {
     font-weight: bold;
     color: black;
     background-color: #e4e4e4;
-    border:  2px solid black ;
+    border:  2px solid black;
 }
 .go-to-payment{
     color: #fff;
     background-color: black;
+    border:  2px solid black ;
 }
 
 .review-button {
@@ -404,4 +407,8 @@ hr {
     min-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.go-back-to-edit-btn .NavLink:visited{
+    color: black;
 }
