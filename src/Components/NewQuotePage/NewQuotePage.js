@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from "react";
 import './NewQuotePage.css';
 import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
@@ -7,6 +7,14 @@ import { Icon } from '@iconify/react';
 import { NavLink } from 'react-router-dom';
 
 const NewQuotePage = () => {
+
+    //Scroll function
+    const myRef = useRef(null)
+    const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })   
+
+    const myRef2 = useRef(null)
+    const executeScroll2 = () => myRef2.current.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })   
+
     return (
         <>
         <NavBar/>
@@ -191,10 +199,10 @@ const NewQuotePage = () => {
         </div>
         <div className="container-arrowdown">
             <div className='down-arrow'>
-                <Icon icon="ant-design:down-outlined" width={60} />
+                <button className ="scroll-button" onClick={executeScroll}><Icon icon="ant-design:down-outlined" width={60} /></button>
             </div>
         </div>
-        <div className="ex-quote-box">
+        <div ref={myRef} className="ex-quote-box">
             <p className='ex-steps'>
                 STEP 2: <br/> Personal <br/>details 
             </p>
@@ -360,10 +368,10 @@ const NewQuotePage = () => {
         </div>
         <div className="container-arrowdown">
             <div className='down-arrow'>
-                <Icon icon="ant-design:down-outlined" width={60} />
+            <button className ="scroll-button" onClick={executeScroll2}><Icon icon="ant-design:down-outlined" width={60} /></button>
             </div>
         </div>
-        <div className='step-3-container'>
+        <div ref={myRef2} className='step-3-container'>
             <div className="step-3-title">
                 STEP 3: <br />Add other <br /> drivers
             </div>

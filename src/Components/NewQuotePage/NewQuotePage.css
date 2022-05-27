@@ -101,3 +101,8 @@
 .existing-button-1 .NavLink:visited {
     color: black;
 }
+
+.scroll-button {
+    background-color: #fff;
+    border: none;
+}
