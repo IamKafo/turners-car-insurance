@@ -15,7 +15,7 @@ function valueLabelFormat(value) {
     let unitIndex = 0;
     let scaledValue = value
 
-    while (scaledValue >= 600 && unitIndex < units.length -1) {
+    while (scaledValue >= 700 && unitIndex < units.length -1) {
         unitIndex += 1;
         scaledValue =700;
     }
@@ -32,9 +32,33 @@ const ReviewPage = () => {
 
     const [value, setValue] = useState(62.68)
     const [email, setEmail] = useState(false)
+    const [fortnightly, setFortnightly] = useState(false)
+    const [monthly, setMonthly] = useState(false)
+    const [annually, setAnnually] = useState(false)
+  
+
+    
+    const TogglecardOne = () => {
+        setFortnightly(!fortnightly);
+        
+    }
+
+    const TogglecardTwo = () => {
+        
+        setMonthly(!monthly);
+    }
+    const TogglecardThree = () => {
+        
+        setAnnually(!annually);
+    }
+
+    let toggleClassCheck = fortnightly ? 'active' : '';
+    let toggleClassCheckmonthly = monthly ? 'active' : '';
+    let toggleClassCheckAunnually = annually ? 'active' : '';
+
 
     const handleClick = () => {
-        setEmail(email => !setEmail)
+        setEmail(!email)
     }
 
     const handleChange = (e,newValue) => {
@@ -61,32 +85,32 @@ const ReviewPage = () => {
 
                 <div className='card-container'>
                     <div className='card-row'>
-                        <div className='card'>
+                        <div className={`card${toggleClassCheck}`}>
                             <div className='card-header'>Fortnightly plan</div>
                             <div className='plan-price'><span className="price-number">$28.93 </span> Fortnightly</div>
                             <hr></hr>
                             <div className='card-content'>Includes <span className='color-price'>$20</span> online discount<br/>Save $25 if you insure another vehicle</div>
                             <div className='disclaimer'>*Paying fortnightly is our most<br/>popular payment frequency</div>
-                            <button className='selected-button'>Select</button>
+                            <button onClick={TogglecardOne} className='selected-button'>Select</button>
 
                         </div>
-                        <div className='card'>
+                        <div className={`card${toggleClassCheckmonthly}`}>
                             <div className='our-best-plan'>Our best plan</div>
                             <div className='card-header-monthly'>Monthly plan</div>
                             <div className='plan-price'><span className="price-number">$62.68 </span> Monthly</div>
                             <hr></hr>
                             <div className='card-content'>Includes <span className='color-price'>$40</span> online discount<br/>Save $25 if you insure another vehicle</div>
                             <div className='disclaimer'>*Paying monthly is our flexi-plan.<br/>Click <span className='here-styled'>here</span> for more information</div>
-                            <button className='selected-button'>Select</button>
+                            <button  onClick={TogglecardTwo} className='selected-button'>Select</button>
 
                         </div>
-                        <div className='card'>
+                        <div className={`card${toggleClassCheckAunnually}`}>
                             <div className='card-header'>Annual plan</div>
                             <div className='plan-price'><span className="price-number">$700.40 </span> Annually</div>
                             <hr></hr>
                             <div className='card-content'>Includes <span className='color-price'>$60</span> online discount<br/>Save $25 if you insure another vehicle</div>
                             <div className='disclaimer'>*You save $45 per year if you<br/>choose to pay annually</div>
-                            <button className='selected-button'>Select</button>
+                            <button onClick={TogglecardThree} className='selected-button'>Select</button>
 
                         </div>
                     </div>
@@ -238,6 +262,25 @@ const ReviewPage = () => {
                 <button className='go-back-to-edit-btn'><b><NavLink className="NavLink" to='/existingdetailspage'>Go back edit details</NavLink></b></button>
                 <button onClick={handleClick} className='email-my-quote'><b>Email my quote</b></button>
                 <button className='go-to-payment'><b><NavLink className="NavLink" to='/buypolicy'>Go to payment</NavLink></b></button>
+
+                {
+                    email && ( 
+                        <div className="email-dropdown-container">
+                                <div className="email-card">
+                                    <div className="need-time">
+                                        <div className='email-header'>Need time to think it over?</div>
+                                        <p className='enter-email'>Enter your email address and we'll send <br /> you the quote details.</p>
+                                        <input type="text" className='email-input' placeholder='e.g fred.daggs@example.com' />
+                                        <div>View our <span className='privacy-blue'>privacy policy</span></div>
+                                    </div>
+                                    <div className="button-container-email">
+                                        <button className='send'>Send</button>
+                                        <button className='cancel'>Cancel</button>
+                                    </div>
+                                </div>
+                        </div>
+                     )
+                 } 
 
             </div>
         </div>
