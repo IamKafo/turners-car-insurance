@@ -284,7 +284,6 @@
     font-size: 25px;
     font-weight: 500px;
     color: #4B5563;
-    margin-top: 6px;
     
 }
 
@@ -292,6 +291,7 @@
     font-size: 25px;
     font-weight: 400px;
     color: #4B5563;
+    margin-bottom: 6px;
 }
 
 .bank-selection , .bottom-details-input, .bottom-details-input-numbers {
