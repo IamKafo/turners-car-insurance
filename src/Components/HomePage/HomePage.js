@@ -85,7 +85,7 @@ const [showQoute5, setShowQoute5] = useState(false)
                     {
                         showQoute2 && (
                             <div className="faq-dropdown-answers">
-                                <p>Yes we do! Enter your vehicle details and see what you qualify for <u>here.</u> </p>
+                                <p>Yes we do! Enter your vehicle details and see what you qualify for <b><u>here.</u></b> </p>
                             </div>
                         )
                     }
@@ -100,7 +100,7 @@ const [showQoute5, setShowQoute5] = useState(false)
                     {
                         showQoute3 && (
                             <div className="faq-dropdown-answers">
-                                <p>You can get a quote on our website's home page: click on "Get a quote" or click <u>here</u> to get started. </p>
+                                <p>You can get a quote on our website's home page: click on "Get a quote" or click <b><u>here</u></b> to get started. </p>
                             </div>
                         )
                     }
