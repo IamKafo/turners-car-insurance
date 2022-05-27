@@ -8,6 +8,8 @@ import './HomePage.css'
 import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
 
+import { motion } from "framer-motion";
+
 const HomePage = () => {
 
 // const [isActive, setIsActive] = useState(false)
@@ -22,7 +24,10 @@ const [showQoute5, setShowQoute5] = useState(false)
   return (
     <>
         <NavBar/>
-        <div className="homepage-container">
+        <motion.div className='homepage-container'
+        initial={{opacity:0, transition:{duration:0.5}}}
+        animate={{opacity:1, transition:{duration:0.5}}}
+        exit={{opacity:0, transition:{duration:0.5}}}>
             <SimpleCarousel>
                 <img src={img1} alt="cars"  />
                 <img src={img2} alt="cars"  />
@@ -133,7 +138,7 @@ const [showQoute5, setShowQoute5] = useState(false)
                 </div>
                
             </div>
-        </div>
+        </motion.div>
     <Footer/>
     </>
   )

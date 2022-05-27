@@ -5,11 +5,16 @@ import "./Payment.css";
 import ProgressBar from '../../Images/progressbar3.png';
 import { NavLink } from "react-router-dom";
 import { Icon } from "@iconify/react";
+import { motion } from "framer-motion";
 
 const BuyPolicy = () => {
     return (
         <>
         <NavBar/>
+        <motion.div
+        initial={{opacity:0, transition:{duration:0.5}}}
+        animate={{opacity:1, transition:{duration:0.5}}}
+        exit={{opacity:0, transition:{duration:0.5}}}>
         <img src={ProgressBar} alt="progress bar" className='progress-bar'/>
         <div className='payment-page-container'>
                 <div className='payment-header'>Buy your policy</div>
@@ -200,6 +205,7 @@ const BuyPolicy = () => {
                     </div>
                 </div>
         </div>
+        </motion.div>
         <Footer/>
         </>
     )
