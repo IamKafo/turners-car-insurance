@@ -28,9 +28,9 @@ const ChoosePolicy = () => {
                                 showQoute && (
                                             <div className='drop-down-menu'>
                                                     <h3>Your family name</h3>
-                                                    <input type="text" name="name" placeholder='Enter your name here' />
+                                                    <input type="text" name="name" placeholder='Enter your name here' required />
                                                     <h3>Your quote number</h3>
-                                                    <input type="text" name="name" placeholder='Enter your quote number' />
+                                                    <input type="text" name="name" placeholder='Enter your quote number' required />
                                                     <p>I can't remember my quote number</p>
                                                     <button className='my-Qoute-Button'><NavLink className="NavLink" to='/existingdetailspage'>My quote</NavLink></button>
                                             </div>

@@ -63,7 +63,7 @@ const [showQoute5, setShowQoute5] = useState(false)
                 </div>
                 <div className="faq-questions" onClick={(e) => setShowQoute1(!showQoute1)}>
                     <h4>What are your different types of policies?
-                       <span> {showQoute1=== true ? <Icon icon="akar-icons:minus" color="#c4c4c4" />:<Icon className='faq-plus-icon'icon="typcn:plus" />}</span>
+                       <span> {showQoute1=== true ? <Icon icon="akar-icons:minus" color="#c4c4c4" />:<Icon className='faq-plus-icon'icon="akar-icons:plus" />}</span>
                     </h4>
                     
     
@@ -78,14 +78,14 @@ const [showQoute5, setShowQoute5] = useState(false)
                 </div>
                 <div className="faq-questions" onClick={(e) => setShowQoute2(!showQoute2)}>
                     <h4>Do you offer discount for multiple vehicle policies?
-                       <span> {showQoute2=== true ? <Icon icon="akar-icons:minus" color="#c4c4c4" />:<Icon className='faq-plus-icon'icon="typcn:plus" />}</span>
+                       <span> {showQoute2=== true ? <Icon icon="akar-icons:minus" color="#c4c4c4" />:<Icon className='faq-plus-icon'icon="akar-icons:plus" />}</span>
                     </h4>
                     
     
                     {
                         showQoute2 && (
                             <div className="faq-dropdown-answers">
-                                <p>Yes we do! Enter your vehicle details and see what you qualify for <u>here.</u> </p>
+                                <p>Yes we do! Enter your vehicle details and see what you qualify for <b><u>here.</u></b> </p>
                             </div>
                         )
                     }
@@ -93,14 +93,14 @@ const [showQoute5, setShowQoute5] = useState(false)
                 </div>
                 <div className="faq-questions" onClick={(e) => setShowQoute3(!showQoute3)}>
                     <h4>How do I get a quote? 
-                        <span>{showQoute3=== true ? <Icon icon="akar-icons:minus" color="#c4c4c4" />:<Icon className='faq-plus-icon'icon="typcn:plus" />}</span>
+                        <span>{showQoute3=== true ? <Icon icon="akar-icons:minus" color="#c4c4c4"  />:<Icon className='faq-plus-icon'icon="akar-icons:plus" />}</span>
                     </h4>
                     
     
                     {
                         showQoute3 && (
                             <div className="faq-dropdown-answers">
-                                <p>You can get a quote on our website's home page: click on "Get a quote" or click <u>here</u> to get started. </p>
+                                <p>You can get a quote on our website's home page: click on "Get a quote" or click <b><u>here</u></b> to get started. </p>
                             </div>
                         )
                     }
@@ -108,7 +108,7 @@ const [showQoute5, setShowQoute5] = useState(false)
                 </div>
                 <div className="faq-questions" onClick={(e) => setShowQoute4(!showQoute4)}>
                     <h4>How is my quote calculated?
-                       <span> {showQoute4=== true ? <Icon icon="akar-icons:minus" color="#c4c4c4" />:<Icon className='faq-plus-icon'icon="typcn:plus" />}</span>
+                       <span> {showQoute4=== true ? <Icon icon="akar-icons:minus" color="#c4c4c4" />:<Icon className='faq-plus-icon'icon="akar-icons:plus" />}</span>
                     </h4>
                     
     
@@ -123,7 +123,7 @@ const [showQoute5, setShowQoute5] = useState(false)
                 </div>
                 <div className="faq-questions" onClick={(e) => setShowQoute5(!showQoute5)}>
                     <h4>What types of payment do you accept?
-                       <span> {showQoute5=== true ? <Icon icon="akar-icons:minus" color="#c4c4c4" />:<Icon className='faq-plus-icon'icon="typcn:plus" />}</span>
+                       <span> {showQoute5=== true ? <Icon icon="akar-icons:minus" color="#c4c4c4" />:<Icon className='faq-plus-icon'icon="akar-icons:plus" />}</span>
                     </h4>
                     
     

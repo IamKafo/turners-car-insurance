@@ -104,7 +104,7 @@ const ExistingDetailsPage = () => {
                 <br />
                 <label htmlFor="date" className='ex-date-bubble'>Car registration number: </label>
                 <Icon icon="bi:question-circle" color="white" width={25} />
-                <input className='ex-input' type='text' value='ABC123' placeholder='ABC123'/>
+                <input className='ex-input' type='text' defaultValue='ABC123'/>
                 <br />
                 <select className='ex-selection-1'>
                     <option value="year">2013</option>
@@ -178,13 +178,13 @@ const ExistingDetailsPage = () => {
                     <option value="car">Volvo</option>
                     <option value="car">Zeta</option>
                 </select>
-                <input className='ex-input-3' type='text' value='Blade'/>
+                <input className='ex-input-3' type='text' defaultValue='Blade'/>
                 <br />
                 <div className='ex-bottom'>
                     <label htmlFor="date" className='ex-date-bottom'>Address parked at overnight:</label>
                     <Icon icon="bi:question-circle" color="white" width={25} />
                     <br />
-                    <input className='ex-input-2' type='text' value='54 Something Street, Wellington'/>
+                    <input className='ex-input-2' type='text' defaultValue='54 Something Street, Wellington'/>
                 </div>
                 <div className='ex-date-bottom-container'>
                 <label htmlFor="date" className='ex-date-bottom'>Any modifications to your vechicle:</label>
@@ -224,7 +224,7 @@ const ExistingDetailsPage = () => {
                 <div className='ex-bottom-1'>
                     <label htmlFor="date" className='ex-date-bottom'>Full name:</label>
                     <br />
-                    <input className='ex-input-22' type='text' value='Fred Daggs'/>
+                    <input className='ex-input-22' type='text' defaultValue='Fred Daggs'/>
                 </div>
                 <form action="">
                 <label htmlFor="date" className='ex-date'>Date of birth:</label>
@@ -354,7 +354,7 @@ const ExistingDetailsPage = () => {
                     <label htmlFor="date" className='ex-date-bottom'>Postal address:</label>
                     <Icon icon="bi:question-circle" color="white" width={25} />
                     <br />
-                    <input className='ex-input-2' type='text' value='54 Something Street, Wellington'/>
+                    <input className='ex-input-2' type='text' defaultValue='54 Something Street, Wellington'/>
                 </div>
 
                 </form>

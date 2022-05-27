@@ -87,8 +87,12 @@
 
 .homepage-cards-title h3 {
     font-size: 20px;
+    line-height: 25px;
 }
 
+.homepage-cards-title h3:hover {
+    cursor: pointer;
+}
 .faqs-homepage-container {
     width:1440px;
     margin-left: auto;

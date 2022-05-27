@@ -41,15 +41,16 @@ const ReviewPage = () => {
     
     const TogglecardOne = () => {
         setFortnightly(!fortnightly);
-        
+
     }
 
     const TogglecardTwo = () => {
-        
+
         setMonthly(!monthly);
+
     }
     const TogglecardThree = () => {
-        
+
         setAnnually(!annually);
     }
 
