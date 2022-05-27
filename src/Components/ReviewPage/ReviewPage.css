@@ -450,6 +450,8 @@ hr {
     display: flex;
     align-items: center;
     padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
     flex-direction: column;
 
 }
