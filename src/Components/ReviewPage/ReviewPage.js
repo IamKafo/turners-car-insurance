@@ -95,7 +95,7 @@ const ReviewPage = () => {
                             <div className='card-header'>Fortnightly plan</div>
                             <div className='plan-price'><span className="price-number">$28.93 </span> Fortnightly</div>
                             <hr></hr>
-                            <div className='card-content'>Includes <span className='color-price'>$20</span> online discount<br/>Save $25 if you insure another vehicle</div>
+                            <div className='card-content'>Includes <span className='color-price'>$20</span> online discount<br/>Save $15 if you insure another vehicle</div>
                             <div className='disclaimer'>*Paying fortnightly is our most<br/>popular payment frequency</div>
                             <button onClick={TogglecardOne} className='selected-button'>Select</button>
 
@@ -105,7 +105,7 @@ const ReviewPage = () => {
                             <div className='card-header-monthly'>Monthly plan</div>
                             <div className='plan-price'><span className="price-number">$62.68 </span> Monthly</div>
                             <hr></hr>
-                            <div className='card-content'>Includes <span className='color-price'>$40</span> online discount<br/>Save $25 if you insure another vehicle</div>
+                            <div className='card-content'>Includes <span className='color-price'>$40</span> online discount<br/>Save $20 if you insure another vehicle</div>
                             <div className='disclaimer'>*Paying monthly is our flexi-plan.<br/>Click <span className='here-styled'>here</span> for more information</div>
                             <button  onClick={TogglecardTwo} className='selected-button'>Select</button>
 
