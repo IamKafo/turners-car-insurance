@@ -144,6 +144,7 @@ const BuyPolicy = () => {
                                 <input className='bottom-details-input' type='text' placeholder='' required/>
                                 </label>
                                 <br />
+                                <br/>
                                 <label className="bottom-box-labels" htmlFor="">Bank name:
                                 <br />
                                 <select className='bank-selection'>
@@ -166,13 +167,15 @@ const BuyPolicy = () => {
                             </select>
                                 </label>
                                 <br />
+                                <br/>
                                 <label className="bottom-box-labels" htmlFor="">Account name:
                                 <br />
                                 <input className='bottom-details-input' type='text' placeholder='' required/>
                                 </label>
                                 <br />
+                                <br/>
                                 <label className="bottom-box-labels" htmlFor="">Account number:
-                                <br />
+                                <br/>
                                 <input className='bottom-details-input-numbers' type='text' placeholder='00' required/>
                                 <input className='bottom-details-input-numbers' type='text' placeholder='0000' required/>
                                 <input className='bottom-details-input-numbers' type='text' placeholder='0000000' required/>

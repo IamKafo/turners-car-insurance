@@ -8,7 +8,7 @@ import NewQuotePage from './Components/NewQuotePage/NewQuotePage';
 import ExistingDetailsPage from './Components/ExistingDetailsPage/ExistingDetailsPage';
 import BuyPolicy from './Components/PaymentPage/Payment';
 import ConfirmationPage from './Components/ConfirmationPage/ConfirmationPage';
-
+import ScrollToTop from "./Components/ScrollToTop";
 import { AnimatePresence } from "framer-motion";
 
 function AnimatedRoutes() {
@@ -26,6 +26,7 @@ function AnimatedRoutes() {
                 <Route path="/buypolicy" element={<BuyPolicy/>} />
                 <Route path="/confirm" element={<ConfirmationPage/>} />
             </Routes>
+            <ScrollToTop/>
       </AnimatePresence>
     )
 }
