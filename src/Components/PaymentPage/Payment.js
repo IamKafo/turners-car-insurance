@@ -6,8 +6,11 @@ import ProgressBar from '../../Images/progressbar3.png';
 import { NavLink } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
+import { useRef } from "react";
 
 const BuyPolicy = () => {
+    const myRef = useRef(null)
+    const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })   
     return (
         <>
         <NavBar/>
@@ -94,10 +97,10 @@ const BuyPolicy = () => {
                 </div>
                 <div className="down-arrow-container">
                     <div className="downarrow-buy-policy">
-                        <Icon icon="ant-design:down-outlined" width={60} />
+                        <button className="scroll-button" onClick={executeScroll}> <Icon icon="ant-design:down-outlined" width={60} /></button>
                     </div>
                 </div>
-                <div className="please-complete-direct-debit-container">
+                <div ref={myRef}className="please-complete-direct-debit-container">
                     <div className="please-complete-details-top-box-container">
                         <div className="top-box-header">
                             Please complete the Direct debit details below
