@@ -418,7 +418,7 @@ hr {
     min-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 16px;
+    font-size: 24px;
     margin-top: 20px;
 }
 
@@ -436,13 +436,14 @@ hr {
 
 .email-dropdown-container {
     position: absolute;
-    top:2943px;
+    top:2955px;
     margin-left: auto;
     margin-right: auto;
+    z-index: 9999;
 }
 
 .email-card {
-    width: 307px;
+    width: 277px;
     height: 290px;
     border-radius: 16px;
     background-color: rgba(211, 208, 208, 0.321);
@@ -468,8 +469,12 @@ hr {
     padding-left: 10px;
     font-size: 20px;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
+.enter-email {
+    font-size: 16px;
+}
 .need-time {
     align-items: center;
 }
@@ -479,12 +484,17 @@ hr {
     border-bottom: 1px solid;
 }
 
+.privacy-blue:hover {
+    cursor: pointer;
+}
+
 .send{
     width: 94px;
     height: 50px;
     background-color: black;
     color: #fff;
     border-radius: 16px;
+    font-size: 20px;
 }
 .cancel{
     width: 94px;
@@ -492,6 +502,7 @@ hr {
     border-radius: 16px;
     background-color: #fff;
     margin-left: 10px;
+    font-size: 20px;
 }
 
 .button-container-email {

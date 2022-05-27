@@ -5,6 +5,7 @@ import NavBar from '../NavBar/NavBar';
 import ProgressBar from '../../Images/progressbar2.png';
 import { NavLink } from 'react-router-dom';
 
+import { motion } from 'framer-motion';
 // import { makeStyles } from '@material-ui/core/styles';
 import Slider from '@mui/material/Slider';
 import Box from '@mui/material/Box';
@@ -73,6 +74,10 @@ const ReviewPage = () => {
     return (
         <>
         <NavBar/>
+        <motion.div
+        initial={{opacity:0}}
+        animate={{opacity:1, transition:{duration:0.5}}}
+        exit={{opacity:0, transition:{duration:0.5}}}>
             <img src={ProgressBar} alt="progress bar" className='progress-bar'/>
             <div className='review-page-container'>
                 <div className='review-header'>Review your quote</div>
@@ -284,6 +289,7 @@ const ReviewPage = () => {
 
             </div>
         </div>
+        </motion.div>
         <Footer/>
         </>
     )
