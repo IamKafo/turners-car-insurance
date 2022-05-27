@@ -34,8 +34,8 @@ const NavBar = () => {
                     {
                         isActive && (
                             <div className="insurance-list">
-                                <h3>New quote & our policies</h3>
-                                <h3>Existing qoute</h3>
+                                <NavLink className="NavLink" to='/newquote'><h3>New quote & our policies</h3></NavLink>
+                                <NavLink className="NavLink" to='/existingdetailspage'><h3>Existing qoute</h3></NavLink>
                                 <h3>Mechanical Breackdown Insurance</h3>
                                 <h3>Make a claim</h3>
                             </div>
