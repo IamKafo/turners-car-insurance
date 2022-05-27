@@ -6,12 +6,16 @@ import ProgressBar from '../../Images/progressbar4.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck, faEye, faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
-
+import { motion } from "framer-motion";
 
 const ConfirmationPage = () => {
     return (
         <>
         <NavBar/>
+        <motion.div
+        initial={{opacity:0, transition:{duration:0.5}}}
+        animate={{opacity:1, transition:{duration:0.5}}}
+        exit={{opacity:0, transition:{duration:0.5}}}>
         <img src={ProgressBar} alt="progress bar" className='progress-bar'/>
         <h1 className="large-check-mark"><FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon></h1>
         <header className="congratuations-header">Congratuations!</header>
@@ -27,6 +31,7 @@ const ConfirmationPage = () => {
             <button className="back-home-button"><NavLink className="NavLink" to='/'>Back to homepage</NavLink></button>
             <div className="refer-text">Refer a friend - get $25 if they insure with us!</div>
         </div>
+        </motion.div>
         <Footer/>
         </>
     )

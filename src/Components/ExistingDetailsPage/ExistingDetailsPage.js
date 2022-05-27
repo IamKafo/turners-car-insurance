@@ -6,6 +6,7 @@ import NavBar from '../NavBar/NavBar';
 import ProgressBar from '../../Images/progressbar1.png';
 import { Icon } from '@iconify/react'
 import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const ExistingDetailsPage = () => {
 
@@ -19,8 +20,12 @@ const ExistingDetailsPage = () => {
     return (
         <>
         <NavBar/>
+        <motion.div
+        initial={{opacity:0, transition:{duration:0.5}}}
+        animate={{opacity:1, transition:{duration:0.5}}}
+        exit={{opacity:0, transition:{duration:0.5}}}>
         <img src={ProgressBar} alt="progress bar"  className='progress-bar'/>
-        <div className='existing-details-page-container'>
+        <div className='existing-details-page-container' >
                 <div className='existing-header'>Existing  quote - Comprehensive</div>
         </div>
         <div className="ex-quote-box">
@@ -392,6 +397,7 @@ const ExistingDetailsPage = () => {
                 <button className='existing-button-2'><NavLink className="NavLink" to='/reviewquote'>Review & proceed</NavLink></button>
             </div>
         </div>
+        </motion.div>
         <Footer/>
         </>
     )

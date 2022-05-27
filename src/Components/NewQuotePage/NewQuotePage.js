@@ -5,6 +5,7 @@ import NavBar from '../NavBar/NavBar';
 import ProgressBar from '../../Images/progressbar1.png';
 import { Icon } from '@iconify/react';
 import { NavLink } from 'react-router-dom';
+import { motion } from "framer-motion";
 
 const NewQuotePage = () => {
 
@@ -18,6 +19,10 @@ const NewQuotePage = () => {
     return (
         <>
         <NavBar/>
+        <motion.div 
+        initial={{opacity:0, transition:{duration:0.5}}}
+        animate={{opacity:1, transition:{duration:0.5}}}
+        exit={{opacity:0, transition:{duration:0.5}}}>
         <img src={ProgressBar} alt="progress bar" className='progress-bar'/>
         <div className='new-quote-page-container'>
                 <div className='new-details-header'>New quote - Comprehensive</div>
@@ -403,6 +408,7 @@ const NewQuotePage = () => {
                 <button className='existing-button-2'><b><NavLink className="NavLink" to='/reviewquote'>Get my quote</NavLink></b></button>
             </div>
         </div>
+        </motion.div>
         <Footer/>
         </>
     )

@@ -5,6 +5,7 @@ import NavBar from "../NavBar/NavBar";
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faXmark, faCircleQuestion} from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
 const ChoosePolicy = () => {
 
@@ -13,8 +14,10 @@ const ChoosePolicy = () => {
     return(
         <>
         <NavBar></NavBar>
-        <div className="page2content">
-
+        <motion.div
+        initial={{opacity:0, transition:{duration:0.5}}}
+        animate={{opacity:1, transition:{duration:0.5}}}
+        exit={{opacity:0, transition:{duration:0.5}}}>
             <header> Car insurance </header>
             <div className="policy-container">
                 <div className="policy-text">
@@ -94,7 +97,7 @@ const ChoosePolicy = () => {
                     </tbody>
                 </table>
             </div>
-        </div>
+        </motion.div>
         <Footer></Footer>
         </>
     )
