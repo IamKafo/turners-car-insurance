@@ -26,3 +26,6 @@ A web application which implemented the redesign for a used car dealer (https://
 - selectable insurance plan cards
 - responsive down to 1440px
 - various expandable dropdowns and menus
+
+### Homepage image
+![turners1](https://user-images.githubusercontent.com/80297497/173236210-ad056621-1730-4231-8646-7a17131b7d57.PNG)
