@@ -4,7 +4,7 @@
 
 A web application which implemented the redesign for a used car dealer (https://www.turners.co.nz/) based on the re-design made by UX designers.
 
-[Project Link](https://turners-car-insurance.web.app/)
+[See website here](https://turners-car-insurance.web.app/)
 
 ### Tech stack
 
